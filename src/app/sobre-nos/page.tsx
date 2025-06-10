@@ -1,9 +1,6 @@
-import Image from "next/image";
-
 export default function AboutUs() {
   return (
     <>
-
       <div className="py-10 w-2/3 mx-auto text-center">
         <h2 className="text-2xl text-[#0E0458] font-semibold">Sobre Nós</h2>
 
