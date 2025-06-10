@@ -1,78 +1,44 @@
+import HomePhotoCard from "./home-photo-card";
+
+const photoGrid = [
+  {
+    imageSrc: "home-grid/grid-1.jpg",
+    label1: "Máquinas Manuais",
+    label2: "Flamador",
+  },
+  {
+    imageSrc: "home-grid/grid-2.jpg",
+    label1: "Máquinas Semiautomáticas",
+    label2: "Serigráfica Universal",
+  },
+  {
+    imageSrc: "home-grid/grid-3.jpg",
+    label1: "Máquinas Semiautomáticas",
+    label2: "Estufa de Secagem UV",
+  },
+  {
+    imageSrc: "home-grid/grid-4.jpg",
+    label1: "Máquinas Semiautomáticas",
+    label2: "Serigráfica para Galões",
+  },
+  {
+    imageSrc: "home-grid/grid-5.jpg",
+    label1: "Máquinas Automáticas",
+    label2: "UV / 1 Cor",
+  },
+  {
+    imageSrc: "home-grid/grid-6.jpg",
+    label1: "Máquinas Automáticas",
+    label2: "Cilíndrica UV / 2 Cores",
+  },
+];
+
 export default function HomeGrid() {
   return (
     <div className="grid grid-cols-3 w-6/10 mx-auto gap-20 mt-20">
-      <div className="mt-20 text-center group">
-        <img
-          src={"home-grid/grid-1.jpg"}
-          alt=""
-          className="rounded-2xl w-72 h-72 cursor-pointer mx-auto group-hover:scale-105 transition-transform duration-300"
-        />
-        <p className="mt-4">
-          <b>Máquinas Manuais</b>
-          <br />
-          Flamador
-        </p>
-      </div>
-      <div className="mt-20 text-center group">
-        <img
-          src={"home-grid/grid-2.jpg"}
-          alt=""
-          className="rounded-2xl w-72 h-72 cursor-pointer mx-auto group-hover:scale-105 transition-transform duration-300"
-        />
-        <p className="mt-4">
-          <b>Máquinas Semiautomáticas</b>
-          <br />
-          Serigráfica Universal
-        </p>
-      </div>
-      <div className="mt-20 text-center group">
-        <img
-          src={"home-grid/grid-3.jpg"}
-          alt=""
-          className="rounded-2xl w-72 h-72 cursor-pointer mx-auto group-hover:scale-105 transition-transform duration-300"
-        />
-        <p className="mt-4">
-          <b>Máquinas Semiautomáticas</b>
-          <br />
-          Estufa de Secagem UV
-        </p>
-      </div>
-      <div className="text-center group">
-        <img
-          src={"home-grid/grid-4.jpg"}
-          alt=""
-          className="rounded-2xl w-72 h-72 cursor-pointer mx-auto group-hover:scale-105 transition-transform duration-300"
-        />
-        <p className="mt-4">
-          <b>Máquinas Semiautomáticas</b>
-          <br />
-          Serigráfica para Galões
-        </p>
-      </div>
-      <div className="text-center group">
-        <img
-          src={"home-grid/grid-5.jpg"}
-          alt=""
-          className="rounded-2xl w-72 h-72 cursor-pointer mx-auto group-hover:scale-105 transition-transform duration-300"
-        />
-        <p className="mt-4">
-          <b>Máquinas Automáticas</b>
-          <br />
-          UV / 1 Cor
-        </p>
-      </div>
-      <div className="text-center group">
-        <img
-          src={"home-grid/grid-6.jpg"}
-          alt=""
-          className="rounded-2xl w-72 h-72 cursor-pointer mx-auto group-hover:scale-105 transition-transform duration-300"
-        />
-        <p className="mt-4">
-          <b>Máquinas Automáticas</b>
-          <br />
-          Cilíndrica UV / 2 Cores
-        </p>
-      </div>
+      {photoGrid.map(p => (
+        <HomePhotoCard imageSrc={p.imageSrc} label1={p.label1} label2={p.label2} key={p.imageSrc} />
+      ))}
     </div>
   );
 }
