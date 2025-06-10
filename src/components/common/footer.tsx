@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <footer className="w-full py-20 flex flex-row items-center justify-center gap-30">
         <div className="flex flex-col">
-          <Image src={"logo.png"} alt={"logo.png"} width={276} height={98.25} />
+          <Image src={"/logo.png"} alt={"logo.png"} width={276} height={98.25} />
           <p className="text-sm text-[#0E0458]">
             <b>Atendimento ao Cliente: +55 11 3857-4582</b>
             <br />

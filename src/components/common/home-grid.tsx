@@ -2,32 +2,32 @@ import HomePhotoCard from "./home-photo-card";
 
 const photoGrid = [
   {
-    imageSrc: "home-grid/grid-1.jpg",
+    imageSrc: "/home-grid/grid-1.jpg",
     label1: "Máquinas Manuais",
     label2: "Flamador",
   },
   {
-    imageSrc: "home-grid/grid-2.jpg",
+    imageSrc: "/home-grid/grid-2.jpg",
     label1: "Máquinas Semiautomáticas",
     label2: "Serigráfica Universal",
   },
   {
-    imageSrc: "home-grid/grid-3.jpg",
+    imageSrc: "/home-grid/grid-3.jpg",
     label1: "Máquinas Semiautomáticas",
     label2: "Estufa de Secagem UV",
   },
   {
-    imageSrc: "home-grid/grid-4.jpg",
+    imageSrc: "/home-grid/grid-4.jpg",
     label1: "Máquinas Semiautomáticas",
     label2: "Serigráfica para Galões",
   },
   {
-    imageSrc: "home-grid/grid-5.jpg",
+    imageSrc: "/home-grid/grid-5.jpg",
     label1: "Máquinas Automáticas",
     label2: "UV / 1 Cor",
   },
   {
-    imageSrc: "home-grid/grid-6.jpg",
+    imageSrc: "/home-grid/grid-6.jpg",
     label1: "Máquinas Automáticas",
     label2: "Cilíndrica UV / 2 Cores",
   },
