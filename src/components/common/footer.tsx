@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer className="w-full py-20 flex flex-row items-center justify-center gap-30">
+      <footer className="w-full py-20 flex flex-row items-center justify-center gap-30 shadow-[0_-4px_10px_-2px_rgba(0,0,0,0.1)]">
         <div className="flex flex-col">
           <Image src={"/logo.png"} alt={"logo.png"} width={276} height={98.25} />
           <p className="text-sm text-[#0E0458]">
