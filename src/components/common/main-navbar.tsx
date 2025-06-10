@@ -3,6 +3,41 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
+const links = [
+  {
+    label: "Home",
+    link: "/",
+  },
+  {
+    label: "Sobre Nós",
+    link: "/sobre-nos",
+  },
+  {
+    label: "Máquinas",
+    link: "/maquinas",
+  },
+  {
+    label: "Reforma",
+    link: "/reforma",
+  },
+  {
+    label: "Ferramentas",
+    link: "/ferramentas",
+  },
+  {
+    label: "Venda de Peças",
+    link: "/venda-de-pecas",
+  },
+  {
+    label: "Assistência",
+    link: "/assistencia",
+  },
+  {
+    label: "Contato",
+    link: "/contato",
+  },
+];
+
 export default function MainNavbar() {
   const [sticky, setSticky] = useState<boolean>(false);
   const navbarRef = useRef<HTMLElement>(null);
@@ -12,10 +47,10 @@ export default function MainNavbar() {
     if (navbarRef.current) {
       initialOffsetTop = navbarRef.current.offsetTop;
     }
-    
+
     const handleScroll = () => {
       if (!navbarRef.current) return;
-      
+
       if (window.scrollY >= initialOffsetTop) {
         setSticky(true);
       } else {
@@ -35,30 +70,15 @@ export default function MainNavbar() {
       }`}
     >
       <div className="w-8/12 h-12 mx-auto flex flex-row justify-between items-center relative">
-        <Link href={"/"} className="text-white cursor-pointer">
-          Home
-        </Link>
-        <Link href={"/sobre-nos"} className="text-white cursor-pointer">
-          Sobre Nós
-        </Link>
-        <Link href={"/maquinas"} className="text-white cursor-pointer">
-          Máquinas
-        </Link>
-        <Link href={""} className="text-white cursor-pointer">
-          Reforma
-        </Link>
-        <Link href={""} className="text-white cursor-pointer">
-          Ferramentas
-        </Link>
-        <Link href={""} className="text-white cursor-pointer">
-          Venda de Peças
-        </Link>
-        <Link href={""} className="text-white cursor-pointer">
-          Assistência
-        </Link>
-        <Link href={""} className="text-white cursor-pointer">
-          Contato
-        </Link>
+        {links.map((l) => (
+          <Link
+            key={l.link}
+            href={l.link}
+            className="text-white cursor-pointer hover:underline"
+          >
+            {l.label}
+          </Link>
+        ))}
       </div>
     </nav>
   );

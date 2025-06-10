@@ -75,6 +75,12 @@ export default function Home() {
         <HomeGrid />
       </div>
 
+
+      <div className="w-2/3 mx-auto flex flex-row items-center justify-between mt-20 gap-20">
+      <div className="w-1/2 bg-amber-600"><p>flaksjdf</p></div>
+      <div className="w-1/2 bg-red-500"><p>falskjdflkj</p></div>
+      </div>
+
     </>
   );
 }
