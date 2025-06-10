@@ -12,8 +12,8 @@ export default function HomePhotoCard({ imageSrc, label1, label2 }: Props) {
       <Image
         src={imageSrc}
         alt={imageSrc}
-        width={72}
-        height={72}
+        width={1000}
+        height={1000}
         className="rounded-sm w-72 h-72 cursor-pointer mx-auto group-hover:scale-105 transition-transform duration-300"
       />
       <p className="mt-4">
