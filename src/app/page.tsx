@@ -1,4 +1,5 @@
 import HomeGrid from "@/components/common/home-grid";
+import HomeVideos from "@/components/common/home-videos";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
         ></video>
       </div>
 
-      <div className="w-2/3 mx-auto flex flex-row items-center justify-between mt-20 gap-20">
+      <section className="w-2/3 mx-auto flex flex-row items-center justify-between mt-20 gap-20">
         <div className="w-1/2">
           <img src={"iso.webp"} alt="iso" />
           <h2 className="text-2xl font-bold mt-10">
@@ -69,13 +70,13 @@ export default function Home() {
             className="h-full object-fill"
           />
         </div>
-      </div>
+      </section>
 
       <div className="w-full bg-gray-100 py-20">
         <HomeGrid />
       </div>
 
-      <div className="w-2/3 mx-auto flex flex-row items-start justify-between mt-20 gap-20">
+      <section className="w-2/3 mx-auto flex flex-row items-start justify-between my-20 gap-20">
         <div className="w-1/2">
           <h2 className="text-2xl font-bold">Sobre Nós</h2>
           <p className="mt-10 text-justify">
@@ -138,8 +139,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
+      <HomeVideos />
 
     </>
   );
