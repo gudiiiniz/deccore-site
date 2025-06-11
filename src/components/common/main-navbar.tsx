@@ -32,10 +32,6 @@ const links = [
     link: "/#",
   },
 
-  {
-    label: "Contato",
-    link: "/contato",
-  },
 ];
 
 export default function MainNavbar() {
