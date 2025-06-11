@@ -1,18 +1,23 @@
-import Image from "next/image";
+import Machines from "@/components/common/machines";
 
 export default function Flamer() {
-    return(
-        <>
-        <div className="w-full h-[600px] relative">
-            <Image
-            src="/flamer/banner.webp"
-            alt="banner.webp"
-            fill
-            className="object-cover"
-            />
-        </div>
-
-        
-        </>
-    )
+  return (
+    <Machines
+      bannerSrc={"/flamer/banner.webp"}
+      title={`Flamador com Bomba d’Água`}
+      subtitle={"Linha Manual"}
+      model={"450CBA"}
+      modelType={"Manual"}
+      productivity={"2000 P/H"}
+      description={
+        "Flamador de embalagens, utilizado para fazer o tratamento de superfície em embalagens de PE e PP por meio de chamas."
+      }
+      imagesSrc={[
+        "/flamer/photo1.jpg",
+        "/flamer/photo2.jpg",
+        "/flamer/photo3.jpg",
+        "/flamer/photo4.jpg",
+      ]}
+    />
+  );
 }
