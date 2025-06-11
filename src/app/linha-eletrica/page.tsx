@@ -20,7 +20,7 @@ export default function Eletric() {
         </h2>
         <p className="font-semibold mt-1">Linha Elétrica</p>
         <div className="grid grid-cols-4 gap-4 mt-18">
-          {Array.from({ length: 144 }, (_, idx) => (
+          {Array.from({ length: 145 }, (_, idx) => (
             <SalesCard
               key={idx}
               imageSrc={`/eletric/photo (${idx}).png`}

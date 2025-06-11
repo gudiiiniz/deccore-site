@@ -226,12 +226,7 @@ export const electricTools = [
 
   {
     title: `04.009.0006`,
-    subtitle: `RELE - ELETROMEC. - MY4N - 20/240VAC – 4 CONTATOS NA/NF`,
-  },
-
-  {
-    title: `– COM LED *(MY4N-CR + PYFZ-14-E)`,
-    subtitle: ``,
+    subtitle: `RELE - ELETROMEC. - MY4N - 20/240VAC – 4 CONTATOS NA/NF – COM LED *(MY4N-CR + PYFZ-14-E)`,
   },
 
   {
