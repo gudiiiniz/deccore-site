@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import MachinesDropdown from "./machines-dropdown";
+import Dropdown from "./machines-dropdown";
+import SalesDropdown from "./sales-dropdown";
 
 const links = [
   {
@@ -14,7 +17,7 @@ const links = [
   },
   {
     label: "Máquinas",
-    link: "/maquinas",
+    link: "/#",
   },
   {
     label: "Reforma",
@@ -26,7 +29,7 @@ const links = [
   },
   {
     label: "Venda de Peças",
-    link: "/venda-de-pecas",
+    link: "/#",
   },
   {
     label: "Assistência",
@@ -70,15 +73,19 @@ export default function MainNavbar() {
       }`}
     >
       <div className="w-8/12 h-12 mx-auto flex flex-row justify-between items-center relative">
-        {links.map((l) => (
-          <Link
-            key={l.link}
-            href={l.link}
-            className="text-white cursor-pointer hover:underline"
-          >
-            {l.label}
-          </Link>
-        ))}
+        {links.map((l, idx) => {
+          if(idx+1 === 3) return <MachinesDropdown key={"machines"}/>
+          if(idx+1 === 6) return <SalesDropdown key={"sales"}/>
+          return (
+            <Link
+              key={l.link}
+              href={l.link}
+              className="text-white cursor-pointer hover:underline"
+            >
+              {l.label}
+            </Link>
+          );
+        })}
       </div>
     </nav>
   );
