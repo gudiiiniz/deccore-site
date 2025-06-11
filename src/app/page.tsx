@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <>
       <div className="relative flex items-center justify-center shadow-2xl">
-        <div className="absolute z-50 text-center">
-          <p className="text-white text-4xl font-bold text-shadow text-shadow-lg">
+        <div className="absolute z-50 text-center px-4">
+          <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold text-shadow text-shadow-lg">
             Fabricação e Reforma de
           </p>
-          <p className="text-white text-4xl font-bold text-shadow text-shadow-lg">
+          <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold text-shadow text-shadow-lg">
             Máquinas Serigráficas
           </p>
         </div>
@@ -24,13 +24,13 @@ export default function Home() {
           muted
           loop
           playsInline
-          className="w-full h-[700px] object-fill"
+          className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] object-cover"
         ></video>
       </div>
 
       <Certificates />
 
-      <div className="w-full bg-gray-100 py-20">
+      <div className="w-full bg-gray-100 py-10 sm:py-16 md:py-20">
         <HomeGrid />
       </div>
 
@@ -43,7 +43,6 @@ export default function Home() {
       <HomeSection3 />
 
       <HomeParallax />
-
     </>
   );
 }

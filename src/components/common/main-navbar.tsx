@@ -31,7 +31,6 @@ const links = [
     label: "Venda de Peças",
     link: "/#",
   },
-
 ];
 
 export default function MainNavbar() {
@@ -61,19 +60,19 @@ export default function MainNavbar() {
   return (
     <nav
       ref={navbarRef}
-      className={`min-w-screen bg-[#0E0458] ${
-        sticky ? "fixed top-0 left-0 right-0 z-60" : "relative"
+      className={`w-full bg-[#0E0458] relative ${
+        sticky ? "lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-60" : ""
       }`}
     >
-      <div className="w-8/12 h-12 mx-auto flex flex-row justify-between items-center relative">
+      <div className="max-w-screen-xl mx-auto h-auto flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-4 px-4 py-4">
         {links.map((l, idx) => {
-          if(idx+1 === 3) return <MachinesDropdown key={"machines"}/>
-          if(idx+1 === 6) return <SalesDropdown key={"sales"}/>
+          if (idx + 1 === 3) return <MachinesDropdown key={"machines"} />;
+          if (idx + 1 === 6) return <SalesDropdown key={"sales"} />;
           return (
             <Link
               key={l.link}
               href={l.link}
-              className="text-white cursor-pointer hover:underline"
+              className="text-white cursor-pointer hover:underline whitespace-nowrap"
             >
               {l.label}
             </Link>

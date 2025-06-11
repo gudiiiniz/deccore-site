@@ -3,14 +3,24 @@ import { ChevronDown, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 export default function MachinesDropdown() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="relative group inline-block">
-      <button className="px-4 py-2 text-white rounded cursor-pointer flex flex-row items-center hover:underline">
+    <div className="relative inline-block">
+      <button
+        onClick={() => setOpen(!open)}
+        className="px-4 py-2 text-white rounded cursor-pointer flex flex-row items-center hover:underline select-none"
+        type="button"
+      >
         Máquinas
         <ChevronDown size={20} />
       </button>
 
-      <div className="absolute left-0 mt-2 w-52 bg-[#0e0458f0] border rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200 z-60">
+      <div
+        className={`absolute -left-35 mt-2 w-52 bg-[#0e0458f0] border rounded shadow-lg transition-opacity duration-200 z-60
+          ${open ? "opacity-100 visible" : "opacity-0 invisible"} 
+          group-hover:opacity-100 group-hover:visible`}
+      >
         <DropdownItem
           label="Manuais"
           submenu={[{ label: "Flamador Manual", link: "/flamador-manual" }]}
@@ -49,7 +59,10 @@ function DropdownItem({ label, submenu }: DropdownItemProps) {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      <div className="flex justify-between items-center px-4 py-2 hover:bg-black cursor-pointer">
+      <div
+        className="flex justify-between items-center px-4 py-2 hover:bg-black cursor-pointer select-none"
+        onClick={() => setOpen(!open)}
+      >
         <p className="text-white">{label}</p>
         {submenu && <ChevronRight className="h-4 w-4 ml-2 text-white" />}
       </div>
@@ -58,7 +71,7 @@ function DropdownItem({ label, submenu }: DropdownItemProps) {
         <div className="absolute top-0 left-full mt-0 w-52 bg-[#0E0458] border rounded shadow-lg z-60">
           {submenu.map((sub, i) => (
             <Link href={sub.link} key={i}>
-              <div className="px-4 py-2 hover:bg-black cursor-pointer">
+              <div className="px-4 py-2 hover:bg-black cursor-pointer select-none">
                 <p className="text-white">{sub.label}</p>
               </div>
             </Link>
