@@ -16,12 +16,20 @@ const links = [
     link: "/sobre-nos",
   },
   {
+    label: "Máquinas",
+    link: "/#",
+  },
+  {
     label: "Reforma",
     link: "/reforma",
   },
   {
     label: "Ferramentas",
     link: "/ferramentas",
+  },
+  {
+    label: "Venda de Peças",
+    link: "/#",
   },
   {
     label: "Assistência",
