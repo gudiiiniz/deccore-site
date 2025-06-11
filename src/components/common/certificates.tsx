@@ -1,6 +1,6 @@
 export default function Certificates() {
   return (
-    <section className="w-2/3 mx-auto flex flex-row items-center justify-between mt-20 gap-20">
+    <section className="w-2/3 mx-auto flex flex-row items-center justify-between mt-20 gap-20 mb-20">
       <div className="w-1/2">
         <img src={"iso.webp"} alt="iso" />
         <h2 className="text-2xl font-bold mt-10">

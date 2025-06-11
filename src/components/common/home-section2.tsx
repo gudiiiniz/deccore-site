@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HomeSection2() {
   return (
-    <section className="w-2/3 mx-auto flex flex-row items-start justify-between my-20 gap-20">
+    <section className="w-2/3 mx-auto flex flex-row items-center my-20 gap-20">
       <div className="w-1/2">
         <h2 className="text-2xl font-bold">Plástico Brasil 2025</h2>
         <h4 className="font-bold">
@@ -46,7 +46,7 @@ export default function HomeSection2() {
           novidades e conversar com a equipe técnica.
         </p>
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 flex justify-center">
         <Image
           src={"/section2/home-7.jpg"}
           alt={"/section2/home-7.jpg"}

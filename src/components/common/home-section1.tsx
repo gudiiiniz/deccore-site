@@ -62,10 +62,12 @@ export default function HomeSection1() {
             qualidade e excelência que você já conhece.
           </p>
         </div>
-        <video className="mt-16 rounded-sm" src="/section1/home-video2.mp4"
-        playsInline
-        controls
-        loop
+        <video
+          className="mt-16 rounded-sm"
+          src="/section1/home-video2.mp4"
+          playsInline
+          controls
+          loop
         ></video>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Certificates from "@/components/common/certificates";
 import HomeGrid from "@/components/common/home-grid";
+import HomeParallax from "@/components/common/home-parallax";
 import HomeSection1 from "@/components/common/home-section1";
 import HomeSection2 from "@/components/common/home-section2";
 import HomeSection3 from "@/components/common/home-section3";
@@ -40,6 +41,8 @@ export default function Home() {
       <HomeSection2 />
 
       <HomeSection3 />
+
+      <HomeParallax />
 
     </>
   );

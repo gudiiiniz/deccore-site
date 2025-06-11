@@ -1,13 +1,19 @@
 import Image from "next/image";
 import { Separator } from "../ui/separator";
 import Link from "next/link";
+import { Facebook, Instagram, Linkedin, MessageCircle, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
     <>
       <footer className="w-full py-20 flex flex-row items-center justify-center gap-30 shadow-[0_-4px_10px_-2px_rgba(0,0,0,0.1)]">
-        <div className="flex flex-col">
-          <Image src={"/logo.png"} alt={"logo.png"} width={276} height={98.25} />
+        <div className="flex flex-col pb-5">
+          <Image
+            src={"/logo.png"}
+            alt={"logo.png"}
+            width={276}
+            height={98.25}
+          />
           <p className="text-sm text-[#0E0458]">
             <b>Atendimento ao Cliente: +55 11 3857-4582</b>
             <br />
@@ -16,6 +22,52 @@ export default function Footer() {
             <br />
             Cumbica - Guarulhos - SP - Brasil
           </p>
+
+          <div className="flex flex-row justify-center gap-4 mt-8">
+            <a href="https://www.facebook.com/deccserigrafia" target="_blank">
+              <Facebook
+                size={30}
+                className="text-[#0E0458] cursor-pointer transition-transform duration-300 hover:scale-110"
+              />
+            </a>
+
+            <a href="https://www.instagram.com/deccserigrafia/" target="_blank">
+              <Instagram
+                size={30}
+                className="text-[#0E0458] cursor-pointer transition-transform duration-300 hover:scale-110"
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/deccoreserigrafia/"
+              target="_blank"
+            >
+              <Linkedin
+                size={30}
+                className="text-[#0E0458] cursor-pointer transition-transform duration-300 hover:scale-110"
+              />
+            </a>
+
+            <a
+              href="https://www.youtube.com/@deccoreserigrafia6780"
+              target="_blank"
+            >
+              <Youtube
+                size={30}
+                className="text-[#0E0458] cursor-pointer transition-transform duration-300 hover:scale-110"
+              />
+            </a>
+
+            <a
+              href="https://web.whatsapp.com/send?phone=+5511999400004"
+              target="_blank"
+            >
+              <MessageCircle
+                size={30}
+                className="text-[#0E0458] cursor-pointer transition-transform duration-300 hover:scale-110"
+              />
+            </a>
+          </div>
         </div>
         <div className="flex flex-col">
           <ul>
