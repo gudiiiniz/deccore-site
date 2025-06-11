@@ -13,10 +13,10 @@ export default function UniversalScreenPrinter() {
         "Máquina Serigráfica. Semiautomática. Equipamento para gravação de objetos, oval, plano, cilíndrico e cônico."
       }
       imagesSrc={[
-        "/universal-screen-printer/banner.webp",
-        "/universal-screen-printer/banner.webp",
-        "/universal-screen-printer/banner.webp",
-        "/universal-screen-printer/banner.webp",
+        "/universal-screen-printer/photo1.jpg",
+        "/universal-screen-printer/photo2.jpg",
+        "/universal-screen-printer/photo3.jpg",
+        "/universal-screen-printer/photo4.jpg",
       ]}
     />
   );

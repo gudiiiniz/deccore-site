@@ -75,7 +75,7 @@ export default function Machines({
         <h2 className="text-[#0E0458] text-2xl text-center font-semibold">
           Portifólio do Equipamento
         </h2>
-        <div className="w-2/3 mx-auto grid grid-cols-4 gap-4 mt-14">
+        <div className="w-2/3 mx-auto grid grid-cols-4 gap-4 mt-14 justify-items-center">
           {imagesSrc.map((i, idx) => (
             <Image
               key={idx}

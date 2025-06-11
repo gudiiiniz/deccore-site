@@ -25,12 +25,12 @@ type DropdownItemProps = {
 
 function DropdownItem({ label, link }: DropdownItemProps) {
   return (
-    <div className="group/item relative">
-      <div className="flex justify-between items-center px-4 py-2 hover:bg-black cursor-pointer">
-        <Link href={link} className="text-white">
-          {label}
-        </Link>
+    <Link href={link}>
+      <div className="group/item relative">
+        <div className="flex justify-between items-center px-4 py-2 hover:bg-black cursor-pointer">
+          <p className="text-white">{label}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
