@@ -35,9 +35,14 @@ const photoGrid = [
 
 export default function HomeGrid() {
   return (
-    <div className="grid grid-cols-3 w-6/10 mx-auto gap-20 mt-20">
-      {photoGrid.map(p => (
-        <HomePhotoCard imageSrc={p.imageSrc} label1={p.label1} label2={p.label2} key={p.imageSrc} />
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 lg:gap-20 max-w-6xl mx-auto px-4">
+      {photoGrid.map((p) => (
+        <HomePhotoCard
+          imageSrc={p.imageSrc}
+          label1={p.label1}
+          label2={p.label2}
+          key={p.imageSrc}
+        />
       ))}
     </div>
   );

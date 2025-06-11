@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export default function HomeSection2() {
   return (
-    <section className="w-2/3 mx-auto flex flex-row items-center my-20 gap-20">
-      <div className="w-1/2">
-        <h2 className="text-2xl font-bold">Plástico Brasil 2025</h2>
-        <h4 className="font-bold">
+    <section className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center my-10 gap-10 lg:gap-20">
+      <div className="w-full lg:w-1/2">
+        <h2 className="text-xl sm:text-2xl font-bold">Plástico Brasil 2025</h2>
+        <h4 className="font-semibold mt-2 text-base sm:text-lg">
           Presença com soluções inovadoras em automação serigráfica
         </h4>
-        <p className="mt-6 text-justify">
+        <p className="mt-6 text-justify text-sm sm:text-base">
           A Deccore Serigrafia, referência nacional na fabricação e reforma de
           máquinas serigráficas automáticas, está participando da edição 2025 da
-          Plástico Brasil {`-`} Feira Internacional do Plástico, que acontece
-          entre os dias 24 e 28 de março, no São Paulo Expo.
+          Plástico Brasil – Feira Internacional do Plástico, que acontece entre
+          os dias 24 e 28 de março, no São Paulo Expo.
           <br />
           <br />
           Com uma trajetória marcada pela excelência técnica e foco em inovação,
@@ -46,13 +46,13 @@ export default function HomeSection2() {
           novidades e conversar com a equipe técnica.
         </p>
       </div>
-      <div className="w-1/2 flex justify-center">
+      <div className="w-full lg:w-1/2 flex justify-center">
         <Image
           src={"/section2/home-7.jpg"}
-          alt={"/section2/home-7.jpg"}
+          alt="home-7"
           width={800}
           height={600}
-          className="w-full h-full rounded-sm"
+          className="w-full h-auto rounded-sm"
         />
       </div>
     </section>

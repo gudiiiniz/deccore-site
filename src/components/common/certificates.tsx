@@ -1,12 +1,12 @@
 export default function Certificates() {
   return (
-    <section className="w-2/3 mx-auto flex flex-row items-center justify-between mt-20 gap-20 mb-20">
-      <div className="w-1/2">
-        <img src={"iso.webp"} alt="iso" />
-        <h2 className="text-2xl font-bold mt-10">
+    <section className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between mt-10 gap-10 mb-20">
+      <div className="w-full lg:w-1/2">
+        <img src={"iso.webp"} alt="iso" className="mx-auto" />
+        <h2 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-10 text-center lg:text-left">
           Reconhecidos com a Certificação ISO 9001 🏆
         </h2>
-        <p className="mt-2 text-justify">
+        <p className="mt-4 text-justify text-sm sm:text-base">
           É com enorme orgulho que anunciamos um marco histórico para a Deccore
           Serigrafia e para o setor de máquinas serigráficas no Brasil. Somos a
           primeira empresa do segmento a conquistar a certificação ISO 9001, um
@@ -39,11 +39,11 @@ export default function Certificates() {
           história!
         </p>
       </div>
-      <div className="w-1/2 shadow-2xl">
+      <div className="w-full lg:w-1/2 shadow-2xl">
         <img
           src={"home-certificate.png"}
           alt="home-certificate"
-          className="h-full object-fill"
+          className="w-full h-auto object-contain"
         />
       </div>
     </section>

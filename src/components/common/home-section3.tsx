@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function HomeSection3() {
   return (
-    <section className="w-2/3 mx-auto flex flex-row items-start justify-between my-40 gap-20">
-      <div className="w-1/2">
-        <h2 className="text-2xl font-bold">
+    <section className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-between my-20 gap-10 lg:gap-20">
+      <div className="w-full lg:w-1/2">
+        <h2 className="text-xl sm:text-2xl font-bold">
           Deccore Serigrafia em Constante Inovação:
         </h2>
-        <h4 className="font-bold">
+        <h4 className="font-semibold mt-2 text-base sm:text-lg">
           Explorando Novas Parcerias e Tecnologias na NPE 2024 em Orlando
         </h4>
-        <p className="mt-6 text-justify">
+        <p className="mt-6 text-justify text-sm sm:text-base">
           Nossa diretoria representada por: Rogério Cunha e Renan Cunha, está
           marcando presença na NPE2024 The Plastics Show, um dos eventos mais
           emblemáticos do setor de plásticos, realizado em Orlando, Flórida,
@@ -33,13 +33,13 @@ export default function HomeSection3() {
           recentes e eficazes soluções em serigrafia automática.
         </p>
       </div>
-      <div className="w-1/2">
+      <div className="w-full lg:w-1/2">
         <Image
           src={"/section3/home-8.png"}
-          alt={"/section3/home-8.png"}
+          alt="home-8"
           width={800}
           height={600}
-          className="w-full h-full rounded-sm"
+          className="w-full h-auto rounded-sm"
         />
       </div>
     </section>

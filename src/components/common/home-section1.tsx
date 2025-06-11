@@ -1,9 +1,9 @@
 export default function HomeSection1() {
   return (
-    <section className="w-2/3 mx-auto flex flex-row items-start justify-between my-20 gap-20">
-      <div className="w-1/2">
-        <h2 className="text-2xl font-bold">Sobre Nós</h2>
-        <p className="mt-10 text-justify">
+    <section className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-between my-10 gap-10 lg:gap-20">
+      <div className="w-full lg:w-1/2">
+        <h2 className="text-xl sm:text-2xl font-bold">Sobre Nós</h2>
+        <p className="mt-6 sm:mt-10 text-justify text-sm sm:text-base">
           A Deccore Serigrafia foi fundada no ano de 2000 como empresa de
           representações e revenda de produtos para serigrafia. Em 2014,
           transformou-se em indústria, justamente quando foi detectada, pelo seu
@@ -41,29 +41,29 @@ export default function HomeSection1() {
           processo construtivo.
         </p>
       </div>
-      <div className="w-1/2">
-        <div>
-          <h2 className="text-2xl font-bold">Impressora 3D já em Operação!</h2>
-          <p className="mt-10 text-justify">
-            Estamos empolgados em anunciar que a Deccore Serigrafia agora conta
-            com uma impressora 3D de última geração, já em operação em nossa
-            empresa! Com esta aquisição, estamos prontos para levar nossos
-            serviços a um novo patamar de inovação e personalização.
-            <br />
-            <br /> A nova impressora 3D nos permite criar peças e protótipos com
-            alta precisão e detalhamento, atendendo às necessidades específicas
-            de cada cliente. Seja para o desenvolvimento de novos produtos ou
-            para a personalização de projetos existentes, estamos preparados
-            para oferecer soluções únicas e criativas.
-            <br />
-            <br /> Convidamos você a descobrir como essa tecnologia pode
-            beneficiar seu próximo projeto. Entre em contato conosco para saber
-            mais sobre como podemos transformar suas ideias em realidade com a
-            qualidade e excelência que você já conhece.
-          </p>
-        </div>
+      <div className="w-full lg:w-1/2">
+        <h2 className="text-xl sm:text-2xl font-bold">
+          Impressora 3D já em Operação!
+        </h2>
+        <p className="mt-6 sm:mt-10 text-justify text-sm sm:text-base">
+          Estamos empolgados em anunciar que a Deccore Serigrafia agora conta
+          com uma impressora 3D de última geração, já em operação em nossa
+          empresa! Com esta aquisição, estamos prontos para levar nossos
+          serviços a um novo patamar de inovação e personalização.
+          <br />
+          <br /> A nova impressora 3D nos permite criar peças e protótipos com
+          alta precisão e detalhamento, atendendo às necessidades específicas de
+          cada cliente. Seja para o desenvolvimento de novos produtos ou para a
+          personalização de projetos existentes, estamos preparados para
+          oferecer soluções únicas e criativas.
+          <br />
+          <br /> Convidamos você a descobrir como essa tecnologia pode
+          beneficiar seu próximo projeto. Entre em contato conosco para saber
+          mais sobre como podemos transformar suas ideias em realidade com a
+          qualidade e excelência que você já conhece.
+        </p>
         <video
-          className="mt-16 rounded-sm"
+          className="mt-10 sm:mt-16 rounded-sm w-full h-auto"
           src="/section1/home-video2.mp4"
           playsInline
           controls
