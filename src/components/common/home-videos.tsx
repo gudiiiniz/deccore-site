@@ -11,7 +11,7 @@ export default function HomeVideos() {
       </div>
       <div className="w-1/3">
         <video
-          src={"/home-videos/home-video3.mp4"}
+          src={"/home-videos/home-video4.mp4"}
           className="rounded-sm border border-amber-50"
           controls
           playsInline
