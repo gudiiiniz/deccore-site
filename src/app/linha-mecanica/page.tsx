@@ -1,14 +1,15 @@
 import SalesCard from "@/components/common/sales-card";
 import Image from "next/image";
-import { electricTools } from "@/lib/electric-defs";
+import { mechanicalTools } from "@/lib/mechanical-defs";
 
-export default function Eletric() {
+export default function Mechanical() {
+
   return (
     <>
       <div className="w-full h-[600px] relative">
         <Image
-          src={"/eletric/banner.jpg"}
-          alt={"/eletric/banner.jpg"}
+          src={"/mechanical/banner.jpg"}
+          alt={"/mechanical/banner.jpg"}
           fill
           className="object-cover"
         />
@@ -20,12 +21,12 @@ export default function Eletric() {
         </h2>
         <p className="font-semibold mt-1">Linha Elétrica</p>
         <div className="grid grid-cols-4 gap-4 mt-18">
-          {Array.from({ length: 144 }, (_, idx) => (
+          {Array.from({ length: 35 }, (_, idx) => (
             <SalesCard
               key={idx}
-              imageSrc={`/eletric/photo (${idx}).png`}
-              title={electricTools[idx].title}
-              subtitle={electricTools[idx].subtitle}
+              imageSrc={`/mechanical/photo (${idx}).jpg`}
+              title={mechanicalTools[idx].title}
+              subtitle={mechanicalTools[idx].subtitle}
             />
           ))}
         </div>
