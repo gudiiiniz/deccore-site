@@ -7,18 +7,12 @@ export default function SalesDropdown() {
     <div className="relative group inline-block">
       <button className="px-4 py-2 text-white rounded cursor-pointer flex flex-row items-center hover:underline">
         Venda de Peças
-        <ChevronDown size={20}/>
+        <ChevronDown size={20} />
       </button>
 
       <div className="absolute left-0 mt-2 w-52 bg-[#0e0458f0] border rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200 z-60">
-        <DropdownItem
-          label="Linha Elétrica"
-          link="/linha-eletrica"
-        />
-        <DropdownItem
-          label="Linha Mecânica"
-          link="/linha-mecanica"
-        />
+        <DropdownItem label="Linha Elétrica" link="/linha-eletrica" />
+        <DropdownItem label="Linha Mecânica" link="/linha-mecanica" />
       </div>
     </div>
   );
@@ -30,16 +24,12 @@ type DropdownItemProps = {
 };
 
 function DropdownItem({ label, link }: DropdownItemProps) {
-  const [open, setOpen] = useState(false);
-
   return (
-    <div
-      className="group/item relative"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
+    <div className="group/item relative">
       <div className="flex justify-between items-center px-4 py-2 hover:bg-black cursor-pointer">
-        <Link href={link} className="text-white">{label}</Link>
+        <Link href={link} className="text-white">
+          {label}
+        </Link>
       </div>
     </div>
   );
