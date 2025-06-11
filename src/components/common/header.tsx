@@ -78,7 +78,7 @@ export default function Header() {
               </a>
 
               <a
-                href="https://web.whatsapp.com/send?phone=+5511999400004"
+                href="https://wa.me/+5511999400004"
                 target="_blank"
               >
                 <MessageCircle
