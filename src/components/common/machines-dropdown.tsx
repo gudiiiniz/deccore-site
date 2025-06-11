@@ -7,7 +7,7 @@ export default function MachinesDropdown() {
     <div className="relative group inline-block">
       <button className="px-4 py-2 text-white rounded cursor-pointer flex flex-row items-center hover:underline">
         Máquinas
-        <ChevronDown size={20}/>
+        <ChevronDown size={20} />
       </button>
 
       <div className="absolute left-0 mt-2 w-52 bg-[#0e0458f0] border rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200 z-60">
@@ -37,7 +37,7 @@ export default function MachinesDropdown() {
 
 type DropdownItemProps = {
   label: string;
-  submenu?: { label: string, link: string }[];
+  submenu?: { label: string; link: string }[];
 };
 
 function DropdownItem({ label, submenu }: DropdownItemProps) {
@@ -57,9 +57,11 @@ function DropdownItem({ label, submenu }: DropdownItemProps) {
       {submenu && open && (
         <div className="absolute top-0 left-full mt-0 w-52 bg-[#0E0458] border rounded shadow-lg z-60">
           {submenu.map((sub, i) => (
-            <div key={i} className="px-4 py-2 hover:bg-black cursor-pointer">
-              <Link href={sub.link} className="text-white">{sub.label}</Link>
-            </div>
+            <Link href={sub.link} key={i}>
+              <div className="px-4 py-2 hover:bg-black cursor-pointer">
+                <p className="text-white">{sub.label}</p>
+              </div>
+            </Link>
           ))}
         </div>
       )}
