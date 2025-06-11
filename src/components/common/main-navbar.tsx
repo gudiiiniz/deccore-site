@@ -31,10 +31,7 @@ const links = [
     label: "Venda de Peças",
     link: "/#",
   },
-  {
-    label: "Assistência",
-    link: "/assistencia",
-  },
+
   {
     label: "Contato",
     link: "/contato",
