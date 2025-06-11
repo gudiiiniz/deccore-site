@@ -1,8 +1,22 @@
 export default function HomeVideos() {
   return (
     <section className="w-full bg-[#0E0458] flex flex-row items-center justify-center gap-20 py-20">
-      <p>video placeholder</p>
-      <p>video placeholder</p>
+      <div className="w-1/3">
+        <video
+          src={"/home-videos/home-video3.mp4"}
+          className="rounded-sm border border-amber-50"
+          controls
+          playsInline
+        ></video>
+      </div>
+      <div className="w-1/3">
+        <video
+          src={"/home-videos/home-video3.mp4"}
+          className="rounded-sm border border-amber-50"
+          controls
+          playsInline
+        ></video>
+      </div>
     </section>
   );
 }

@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
             </Link>
             <Separator className="my-4" />
-            <Link href={"/cilindrica"}>
+            <Link href={"/cilindrica-uv"}>
               <li className="text-[#0E0458] text-sm cursor-pointer">
                 Cilíndrica UV / 2 Cores
               </li>
