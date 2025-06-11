@@ -2,6 +2,7 @@ import Certificates from "@/components/common/certificates";
 import HomeGrid from "@/components/common/home-grid";
 import HomeSection1 from "@/components/common/home-section1";
 import HomeSection2 from "@/components/common/home-section2";
+import HomeSection3 from "@/components/common/home-section3";
 import HomeVideos from "@/components/common/home-videos";
 
 export default function Home() {
@@ -37,6 +38,8 @@ export default function Home() {
       <HomeVideos />
 
       <HomeSection2 />
+
+      <HomeSection3 />
 
     </>
   );
