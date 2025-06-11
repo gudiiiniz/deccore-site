@@ -12,11 +12,11 @@ export default function SalesDropdown() {
 
       <div className="absolute left-0 mt-2 w-52 bg-[#0e0458f0] border rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200 z-60">
         <DropdownItem
-          label="Manuais"
+          label="Linha Elétrica"
           link="/linha-eletrica"
         />
         <DropdownItem
-          label="Semiautomáticas"
+          label="Linha Mecânica"
           link="/linha-mecanica"
         />
       </div>
