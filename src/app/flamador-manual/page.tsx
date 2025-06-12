@@ -17,7 +17,7 @@ export default function Flamer() {
         "/flamer/photo2.jpg",
         "/flamer/photo3.jpg",
         "/flamer/photo4.jpg",
-      ]}
+      ]} 
     />
   );
 }

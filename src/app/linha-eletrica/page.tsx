@@ -1,14 +1,27 @@
-import SalesCard from "@/components/common/sales-card";
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
+import SalesCard from "@/components/common/sales-card";
 import { electricTools } from "@/lib/electric-defs";
+import Lightbox from "yet-another-react-lightbox";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 export default function Eletric() {
+  const [index, setIndex] = useState(-1);
+
+  const images = Array.from({ length: 145 }, (_, idx) => ({
+    src: `/eletric/photo (${idx}).png`,
+  }));
+
   return (
     <>
       <div className="w-full h-[600px] relative">
         <Image
           src={"/eletric/banner.jpg"}
-          alt={"/eletric/banner.jpg"}
+          alt="Banner linha elétrica"
           fill
           className="object-cover"
         />
@@ -19,17 +32,26 @@ export default function Eletric() {
           Deccore Peças On-Line
         </h2>
         <p className="font-semibold mt-1">Linha Elétrica</p>
-        <div className="grid grid-cols-4 gap-4 mt-18">
-          {Array.from({ length: 145 }, (_, idx) => (
-            <SalesCard
-              key={idx}
-              imageSrc={`/eletric/photo (${idx}).png`}
-              title={electricTools[idx].title}
-              subtitle={electricTools[idx].subtitle}
-            />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-18">
+          {images.map((img, idx) => (
+            <div key={idx} onClick={() => setIndex(idx)} className="cursor-pointer">
+              <SalesCard
+                imageSrc={img.src}
+                title={electricTools[idx].title}
+                subtitle={electricTools[idx].subtitle}
+              />
+            </div>
           ))}
         </div>
       </section>
+
+      <Lightbox
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        slides={images}
+        plugins={[Zoom, Fullscreen]}
+      />
     </>
   );
 }
