@@ -29,6 +29,7 @@
     "react-hook-form": "^7.57.0",
     "react-icons": "^5.5.0",
     "tailwind-merge": "^3.3.0",
+    "yet-another-react-lightbox": "^3.23.2",
     "zod": "^3.25.57"
   },
   "devDependencies": {
