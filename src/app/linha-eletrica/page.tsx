@@ -18,12 +18,13 @@ export default function Eletric() {
 
   return (
     <>
-      <div className="w-full h-[600px] relative">
+      <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
         <Image
-          src={"/eletric/banner.jpg"}
+          src="/eletric/banner.jpg"
           alt="Banner linha elétrica"
           fill
           className="object-cover"
+          priority
         />
       </div>
 
@@ -34,7 +35,11 @@ export default function Eletric() {
         <p className="font-semibold mt-1">Linha Elétrica</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-18">
           {images.map((img, idx) => (
-            <div key={idx} onClick={() => setIndex(idx)} className="cursor-pointer">
+            <div
+              key={idx}
+              onClick={() => setIndex(idx)}
+              className="cursor-pointer"
+            >
               <SalesCard
                 imageSrc={img.src}
                 title={electricTools[idx].title}
