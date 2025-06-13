@@ -1,17 +1,18 @@
+"use client";
 import Machines from "@/components/common/machines";
+import { useTranslation } from "react-i18next";
 
 export default function UV() {
+  const { t } = useTranslation();
   return (
     <Machines
       bannerSrc={"/uv/banner.jpg"}
-      title={"Máquina Serigráfica Automática com Secagem UV (01 Cor)"}
-      subtitle={"Linha Automática"}
+      title={t("uv.title")}
+      subtitle={t("uv.subtitle")}
       model={"DECC M.S.C.U.V 1C"}
-      modelType={"Automática"}
+      modelType={t("machines.type-automatic")}
       productivity={"2500 à 3300 P/H"}
-      description={
-        "Frascos cilíndricos ou cônicos com diâmetro máximo 90mm, e altura máxima até 270 mm. Descritivo: A máquina serigráfica é responsável por realizar a impressão permeográfica (texto ou figura) em superfícies de diversos tipos de embalagens de vidro, PE e PP."
-      }
+      description={t("uv.desc")}
       imagesSrc={[
         "/uv/photo1.jpg",
         "/uv/photo2.jpg",

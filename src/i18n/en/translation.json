@@ -4,5 +4,95 @@
       "home": "Home",
       "about-us": "About Us"
     }
+  },
+
+  "about-us": {
+    "title": "About Us",
+    "text1": "Deccore Serigrafia was founded in 2000 as a representation and resale company for screen printing products. In 2014, it became an industry, precisely when its owner detected the need to serve some customers who needed renovation and maintenance on their screen printing machines.",
+    "text2": "With the increase in demand, we began to manufacture and supply parts and equipment for the screen printing market in general, and we soon saw the opportunity to manufacture new machines. Today, in addition to continuing our technical assistance and renovation work, we also manufacture machines for various segments. Deccore Serigraphy has proven technology and experience in serving the screen printing market, working hard on Special and Automation Projects, according to the needs and challenges presented by our customers.",
+    "text3": "Our manufacturing line has Automatic and Semi-Automatic Machines, manufacturing UV Ovens, Flamers, Feeders, various tooling and parts in general.",
+    "text4": "Our employees have long experience in manufacturing machines and we constantly seek to meet the needs of the screen printing market, using the most modern and advanced technologies available. We are qualified to develop projects according to the profile and real needs required by the screen printing segment.",
+    "text5": "Deccore Serigraphy is a national company that has developed a high level of expertise to produce and refurbish small, medium and large screen printing machines, thanks to its work methodology that allows total control and monitoring at all stages of the construction process.",
+    "text6": "We are always looking for the best options and suppliers for your equipment and machine components in Brazil and abroad, participating as an exhibitor and visitor in sector fairs, and maintaining contact with partners inside and outside the country. We are trained to develop projects aiming to fully meet the expectations and needs of customers, who can follow the entire manufacturing process, participating from the project's preparation, through the execution and finalization of their equipment.",
+    "text7": "Our industrial park has advanced technology equipment for the production of our machines, providing a high level of quality. We have highly qualified employees to provide technical assistance for maintenance or replacement of parts and equipment.",
+    "text8": "We also have a wide range of consumable products for the screen printing industry, such as inks, fabrics for screens, printing rubbers, UV lamps, among others. We develop special projects meeting the needs of our customers.",
+    "title2": "Location"
+  },
+
+  "footer": {
+    "infos": {
+      "phone": "Customer Service: 55 11 3857-4582",
+      "address1": "Rua João Alfredo, 478 - Cidade Industrial Satélite",
+      "address2": "Cumbica - Guarulhos - SP - Brazil",
+      "rights": "All rights reserved | Deccore © 2025"
+    },
+    "links": {
+      "remodeling": "Remodeling",
+      "tooling": "Tooling",
+      "electric": "Electric Line ",
+      "mechanical": "Mechanical Line",
+      "flamer": "Manual Flamer",
+      "universal": "Universal Screen Printing",
+      "uv-drying": "UV Drying Oven",
+      "gallons": "Screen Printing for Gallons",
+      "cylindrical": "Cylindrical UV / 2 Colors",
+      "uv": "UV / 1 Color"
+    }
+  },
+
+  "flamer": {
+    "title": "Flamer with Water Pump",
+    "subtitle": "Manual Line",
+    "desc": "Packaging flamer, used to perform surface treatment on PE and PP packaging using flames."
+  },
+
+  "machines": {
+    "title": "Equipment Portfolio",
+    "model": "Model",
+    "type": "Type",
+    "productivity": "Productivity",
+    "type-automatic": "Automatic",
+    "type-semiautomatic": "Semi-automatic"
+  },
+
+  "universal": {
+    "title": "Universal Screen Printing Machine",
+    "subtitle": "Semi-automatic Line",
+    "desc": "Screen printing machine. Semi automatic. Equipment for engraving objects, oval, flat, cylindrical and conical."
+  },
+
+  "uv-drying": {
+    "title": "UV Drying Oven",
+    "subtitle": "Semi-automatic Line",
+    "desc": "The drying oven is responsible for drying screen-printed emulsions on the surface of glass, PE and PP packaging."
+  },
+
+  "gallons": {
+    "title": "Screen Printing Machine for",
+    "title2": "engraving on 20 liter gallons",
+    "subtitle": "Semi-automatic Line",
+    "desc": "Equipment for recording 20-liter gallons. The packaging can be engraved in two stages, one image on the front and the other on the back."
+  },
+
+  "uv": {
+    "title": "Automatic Screen Printing Machine with UV Drying (01 Color)",
+    "subtitle": "Automatic Line",
+    "desc": "Cylindrical or conical bottles with a maximum diameter of 90 mm and a maximum height of up to 270 mm. Description: The screen printing machine is responsible for performing permeagraphic printing (text or figure) on surfaces of different types of glass, PE and PP packaging."
+  },
+
+  "cylindrical": {
+    "title": "Automatic Cylindrical Screen",
+    "title2": "Printing Machine UV Drying (02",
+    "title3": "Colors) Double Production",
+    "subtitle": "Automatic Line",
+    "desc": "Cylindrical bottles with a maximum diameter of 90mm, and a maximum height of up to 270 mm. The screen printing machine is responsible for performing permeagraphic printing (text or figure) on surfaces of different types of glass, PE and PP packaging."
+  },
+
+  "remodeling": {
+    "title": "Machine Refurbishment"
+  },
+
+  "tools": {
+    "title": "Parts and Tooling"
   }
 }

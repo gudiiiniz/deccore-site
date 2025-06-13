@@ -6,6 +6,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
+import { useTranslation } from "react-i18next";
 
 export default function Reform() {
   const [index, setIndex] = useState(-1);
@@ -14,6 +15,7 @@ export default function Reform() {
     src: `/reform/reform-${idx + 1}.jpg`,
   }));
 
+  const { t } = useTranslation();
   return (
     <>
       <video
@@ -27,7 +29,7 @@ export default function Reform() {
 
       <div className="py-10 px-4 w-full max-w-6xl mx-auto text-center">
         <h2 className="text-2xl text-[#0E0458] font-semibold">
-          Reforma de Máquinas
+          {t("remodeling.title")}
         </h2>
       </div>
 

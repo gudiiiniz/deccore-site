@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { Separator } from "../ui/separator";
 import Link from "next/link";
@@ -7,8 +8,12 @@ import {
   Linkedin,
   Youtube,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+
+  const { t } = useTranslation();
+
   return (
     <>
       <footer className="w-full py-20 flex flex-col lg:flex-row items-start lg:items-center justify-center gap-12 shadow-[0_-4px_10px_-2px_rgba(0,0,0,0.1)] px-6 lg:px-0">
@@ -21,12 +26,12 @@ export default function Footer() {
             className="mx-auto lg:mx-0"
           />
           <p className="text-sm text-[#0E0458] mt-6 text-center lg:text-left">
-            <b>Atendimento ao Cliente: +55 11 3857-4582</b>
+            <b>{t("footer.infos.phone")}</b>
             <br />
             <br />
-            Rua João Alfredo, 478 - Cidade Industrial Satélite
+            {t("footer.infos.address1")}
             <br />
-            Cumbica - Guarulhos - SP - Brasil
+            {t("footer.infos.address2")}
           </p>
           <div className="flex justify-center lg:justify-start gap-4 mt-8">
             <a
@@ -80,65 +85,55 @@ export default function Footer() {
 
         <div className="flex flex-col max-w-xs mx-auto lg:mx-0">
           <ul className="space-y-4 text-[#0E0458] text-sm">
-            <Link href={"/assistencia"}>
-              <li className="cursor-pointer">Assistência</li>
-            </Link>
-            <Separator className="my-4" />
             <Link href={"/reforma"}>
-              <li className="cursor-pointer">Reforma</li>
+              <li className="cursor-pointer">{t("footer.links.remodeling")}</li>
             </Link>
             <Separator className="my-4" />
             <Link href={"/ferramentas"}>
-              <li className="cursor-pointer">Ferramentas</li>
+              <li className="cursor-pointer">{t("footer.links.tooling")}</li>
             </Link>
             <Separator className="my-4" />
             <Link href={"/linha-eletrica"}>
-              <li className="cursor-pointer">Linha Elétrica</li>
+              <li className="cursor-pointer">{t("footer.links.electric")}</li>
             </Link>
             <Separator className="my-4" />
             <Link href={"/linha-mecanica"}>
-              <li className="cursor-pointer">Linha Mecânica</li>
+              <li className="cursor-pointer">{t("footer.links.mechanical")}</li>
             </Link>
-            <Separator className="my-4" />
-            <Link href={"/contato"}>
-              <li className="cursor-pointer">Contato</li>
-            </Link>
-            <Separator className="my-4" />
           </ul>
         </div>
 
         <div className="flex flex-col max-w-xs mx-auto lg:mx-0">
           <ul className="space-y-4 text-[#0E0458] text-sm">
             <Link href={"/flamador-manual"}>
-              <li className="cursor-pointer">Flamador Manual</li>
+              <li className="cursor-pointer">{t("footer.links.flamer")}</li>
             </Link>
             <Separator className="my-4" />
             <Link href={"/serigrafia-universal"}>
-              <li className="cursor-pointer">Serigrafia Universal</li>
+              <li className="cursor-pointer">{t("footer.links.universal")}</li>
             </Link>
             <Separator className="my-4" />
             <Link href={"/estufa-secagem"}>
-              <li className="cursor-pointer">Estufa de Secagem UV</li>
+              <li className="cursor-pointer">{t("footer.links.uv-drying")}</li>
             </Link>
             <Separator className="my-4" />
             <Link href={"/serigrafia-galoes"}>
-              <li className="cursor-pointer">Serigrafia para Galões</li>
+              <li className="cursor-pointer">{t("footer.links.gallons")}</li>
             </Link>
             <Separator className="my-4" />
             <Link href={"/cilindrica-uv"}>
-              <li className="cursor-pointer">Cilíndrica UV / 2 Cores</li>
+              <li className="cursor-pointer">{t("footer.links.cylindrical")}</li>
             </Link>
             <Separator className="my-4" />
             <Link href={"/uv"}>
-              <li className="cursor-pointer">UV / 1 Cor</li>
+              <li className="cursor-pointer">{t("footer.links.uv")}</li>
             </Link>
-            <Separator className="my-4" />
           </ul>
         </div>
       </footer>
       <div className="bg-[#0E0458] py-3 text-center">
         <p className="text-white text-sm">
-          Todos os direitos reservados | Deccore © 2025
+          {t("footer.infos.rights")}
         </p>
       </div>
     </>

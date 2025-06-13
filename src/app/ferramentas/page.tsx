@@ -3,6 +3,7 @@
 import ToolsCard from "@/components/common/tools-card";
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -14,6 +15,8 @@ export default function Tools() {
   const images = Array.from({ length: 36 }, (_, idx) => ({
     src: `/tools/photo (${idx}).jpg`,
   }));
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -28,7 +31,7 @@ export default function Tools() {
 
       <section className="w-full max-w-6xl px-4 mx-auto flex flex-col text-center py-20">
         <h2 className="text-2xl text-[#0E0458] font-semibold">
-          Peças e Ferramentas
+          {t("tools.title")}
         </h2>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-14">
           {images.map((img, idx) => (
