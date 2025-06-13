@@ -193,5 +193,15 @@
 
   "tools": {
     "title": "Peças e Ferramentais"
+  },
+
+  "electric": {
+    "title": "Deccore Peças On-Line",
+    "subtitle": "Linha Elétrica"
+  },
+
+  "mechanical": {
+    "title": "Deccore Peças On-Line",
+    "subtitle": "Linha Mecânica"
   }
 }

@@ -194,5 +194,15 @@
 
   "tools": {
     "title": "Parts and Tooling"
+  },
+
+  "electric": {
+    "title": "Decorate Online Tools",
+    "subtitle": "Electric Line"
+  },
+
+  "mechanical": {
+    "title": "Deccore Online Tools",
+    "subtitle": "Mechanical Line"
   }
 }

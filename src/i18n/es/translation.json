@@ -193,5 +193,15 @@
 
   "tools": {
     "title": "Piezas y Herramientas"
+  },
+
+  "electric": {
+    "title": "Deccore Piezas Online",
+    "subtitle": "Línea Eléctrica"
+  },
+
+  "mechanical": {
+    "title": "Deccore Piezas Online",
+    "subtitle": "Línea Mecánica"
   }
 }
