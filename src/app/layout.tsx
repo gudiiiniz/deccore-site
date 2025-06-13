@@ -5,6 +5,7 @@ import Header from "@/components/common/header";
 import MainNavbar from "@/components/common/main-navbar";
 import Footer from "@/components/common/footer";
 import WButton from "@/components/common/wpp-button";
+import PageUpButton from "@/components/common/page-up-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <WButton />
+        <PageUpButton />
       </body>
     </html>
   );

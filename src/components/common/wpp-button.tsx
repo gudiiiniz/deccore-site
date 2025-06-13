@@ -19,7 +19,7 @@ export default function WppButton() {
   }, []);
 
   return (
-    <div ref={menuRef} className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div ref={menuRef} className="fixed bottom-24 right-6 z-50 flex flex-col items-end">
       <AnimatePresence>
         {open && (
           <motion.div
@@ -51,7 +51,7 @@ export default function WppButton() {
 
       <button
         onClick={() => setOpen(!open)}
-        className="cursor-pointer bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-200 focus:outline-none"
+        className="cursor-pointer bg-[#0E0458] text-white p-4 rounded-full shadow-lg transition-all duration-200 focus:outline-none"
         aria-label="Contatar via WhatsApp"
       >
         <FaWhatsapp size={28} />
