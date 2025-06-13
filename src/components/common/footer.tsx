@@ -5,7 +5,6 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  MessageCircle,
   Youtube,
 } from "lucide-react";
 
@@ -75,10 +74,6 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <MessageCircle
-                size={30}
-                className="text-[#0E0458] cursor-pointer transition-transform duration-300 hover:scale-110"
-              />
             </a>
           </div>
         </div>

@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 
 interface Props {
   bannerSrc: string;
-  title: string;
+  title: string | ReactNode;
   subtitle: string;
   model: string;
   modelType: string;
@@ -21,6 +22,8 @@ export default function Machines({
   description,
   imagesSrc,
 }: Props) {
+  const isSingleImage = imagesSrc.length === 1;
+
   return (
     <>
       <div className="w-full h-[300px] sm:h-[600px] relative">
@@ -40,9 +43,13 @@ export default function Machines({
             <table className="w-full text-sm min-w-[300px]">
               <thead>
                 <tr className="bg-blue-500 text-white text-left">
-                  <th className="px-4 py-2 font-semibold text-center">Modelo</th>
+                  <th className="px-4 py-2 font-semibold text-center">
+                    Modelo
+                  </th>
                   <th className="px-4 py-2 font-semibold text-center">Tipo</th>
-                  <th className="px-4 py-2 font-semibold text-center">Produtividade</th>
+                  <th className="px-4 py-2 font-semibold text-center">
+                    Produtividade
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -56,7 +63,9 @@ export default function Machines({
               </tbody>
             </table>
           </div>
-          <p className="w-full pt-10 text-center text-gray-600 text-sm">{description}</p>
+          <p className="w-full pt-10 text-center text-gray-600 text-sm">
+            {description}
+          </p>
         </div>
       </section>
 
@@ -69,7 +78,14 @@ export default function Machines({
         <h2 className="text-[#0E0458] text-2xl text-center font-semibold">
           Portifólio do Equipamento
         </h2>
-        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-14 justify-items-center">
+
+        <div
+          className={`w-full max-w-6xl mx-auto mt-14 ${
+            isSingleImage
+              ? "flex justify-center"
+              : "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center"
+          }`}
+        >
           {imagesSrc.map((i, idx) => (
             <Image
               key={idx}

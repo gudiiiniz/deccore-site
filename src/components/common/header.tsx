@@ -5,7 +5,6 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  MessageCircle,
   Youtube,
 } from "lucide-react";
 import Link from "next/link";
@@ -74,12 +73,6 @@ export default function Header() {
                 target="_blank"
               >
                 <Youtube
-                  size={24}
-                  className="text-[#0E0458] cursor-pointer transition-transform duration-300 hover:scale-110"
-                />
-              </a>
-              <a href="https://wa.me/+5511999400004" target="_blank">
-                <MessageCircle
                   size={24}
                   className="text-[#0E0458] cursor-pointer transition-transform duration-300 hover:scale-110"
                 />

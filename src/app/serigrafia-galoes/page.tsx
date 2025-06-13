@@ -4,7 +4,12 @@ export default function ScreenPrintingGallons() {
   return (
     <Machines
       bannerSrc={"/gallons/banner.jpg"}
-      title={"Máquina Serigráfica para gravação em galão de 20 litros"}
+      title={
+        <p>
+          Máquina Serigráfica para gravação <br />
+          em galão de 20 litros
+        </p>
+      }
       subtitle={"Linha Semiautomática"}
       model={"XXXX"}
       modelType={"Semiautomática"}
@@ -12,13 +17,7 @@ export default function ScreenPrintingGallons() {
       description={
         "Equipamento para gravação de galões de 20 Litros. A embalagem pode ser gravada em duas etapas, sendo uma imagem frontal e a outra do verso."
       }
-      imagesSrc={[
-        "/gallons/photo1.jpg",
-        "/gallons/photo1.jpg",
-        "/gallons/photo1.jpg",
-        "/gallons/photo1.jpg",
-      ]}
-
+      imagesSrc={["/gallons/photo1.jpg"]}
     />
   );
 }
