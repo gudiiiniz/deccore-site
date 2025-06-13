@@ -1,7 +1,6 @@
 import Image from "next/image";
 import LgCombobox from "./lg-combobox";
 import {
-  ChevronDown,
   Facebook,
   Instagram,
   Linkedin,

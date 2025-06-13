@@ -1,3 +1,4 @@
+"use client";
 import Certificates from "@/components/common/certificates";
 import HomeGrid from "@/components/common/home-grid";
 import HomeParallax from "@/components/common/home-parallax";
@@ -5,17 +6,20 @@ import HomeSection1 from "@/components/common/home-section1";
 import HomeSection2 from "@/components/common/home-section2";
 import HomeSection3 from "@/components/common/home-section3";
 import HomeVideos from "@/components/common/home-videos";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="relative flex items-center justify-center shadow-2xl">
         <div className="absolute z-30 text-center px-4">
           <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold text-shadow text-shadow-lg">
-            Fabricação e Reforma de
+            {t("home.banner.text1")}
           </p>
           <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold text-shadow text-shadow-lg">
-            Máquinas Serigráficas
+            {t("home.banner.text2")}
           </p>
         </div>
         <video
