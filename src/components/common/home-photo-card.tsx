@@ -1,13 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   imageSrc: string;
   label1: string;
   label2: string;
+  href: string;
 }
 
-export default function HomePhotoCard({ imageSrc, label1, label2 }: Props) {
+export default function HomePhotoCard({ imageSrc, label1, label2, href }: Props) {
   return (
+    <Link href={href}>
     <div className="text-center group">
       <Image
         src={imageSrc}
@@ -22,5 +25,6 @@ export default function HomePhotoCard({ imageSrc, label1, label2 }: Props) {
         {label2}
       </p>
     </div>
+    </Link>
   );
 }
