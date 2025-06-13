@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div className="relative flex items-center justify-center shadow-2xl">
-        <div className="absolute z-50 text-center px-4">
+        <div className="absolute z-30 text-center px-4">
           <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold text-shadow text-shadow-lg">
             Fabricação e Reforma de
           </p>
