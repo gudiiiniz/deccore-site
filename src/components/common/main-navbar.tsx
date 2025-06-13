@@ -7,33 +7,7 @@ import SalesDropdown from "./sales-dropdown";
 import { ChevronDown, ChevronUp, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import NavLink from "./nav-link";
-
-const links = [
-  {
-    label: "Home",
-    link: "/",
-  },
-  {
-    label: "Sobre Nós",
-    link: "/sobre-nos",
-  },
-  {
-    label: "Máquinas",
-    link: "/#",
-  },
-  {
-    label: "Reforma",
-    link: "/reforma",
-  },
-  {
-    label: "Ferramentas",
-    link: "/ferramentas",
-  },
-  {
-    label: "Venda de Peças",
-    link: "/#",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function MainNavbar() {
   const [sticky, setSticky] = useState<boolean>(false);
@@ -42,6 +16,35 @@ export default function MainNavbar() {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
+
+  const { t } = useTranslation();
+
+  const links = [
+    {
+      label: t("main-navbar.links.home"),
+      link: "/",
+    },
+    {
+      label: t("main-navbar.links.about-us"),
+      link: "/sobre-nos",
+    },
+    {
+      label: "Máquinas",
+      link: "/#",
+    },
+    {
+      label: "Reforma",
+      link: "/reforma",
+    },
+    {
+      label: "Ferramentas",
+      link: "/ferramentas",
+    },
+    {
+      label: "Venda de Peças",
+      link: "/#",
+    },
+  ];
 
   useEffect(() => {
     let initialOffsetTop = 0;
