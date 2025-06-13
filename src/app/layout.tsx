@@ -1,10 +1,10 @@
+import Footer from "@/components/common/footer";
+import Header from "@/components/common/header";
+import MainNavbar from "@/components/common/main-navbar";
+import WButton from "@/components/common/wpp-button";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/common/header";
-import MainNavbar from "@/components/common/main-navbar";
-import Footer from "@/components/common/footer";
-import WButton from "@/components/common/wpp-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
