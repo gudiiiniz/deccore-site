@@ -2,7 +2,32 @@
   "main-navbar": {
     "links": {
       "home": "Home",
-      "about-us": "Sobre Nosotros"
+      "about-us": "Sobre Nosotros",
+      "machines": {
+        "label": "Máquinas",
+        "manual": {
+          "label": "Manual",
+          "flamer": "Flamador Manual"
+        },
+        "semi-automatic": {
+          "label": "Semiautomáticas",
+          "universal-screen-printer": "Serigrafía Universal",
+          "drying-oven": "Horno de Secado UV",
+          "gallons": "Serigrafía para Garrafones"
+        },
+        "automatic": {
+          "label": "Automáticas",
+          "uv": "UV / 1 Color",
+          "cylindric-uv": "Cilíndrica UV / 2 Colores"
+        }
+      },
+      "reform": "Reforma",
+      "tools": "Herramientas",
+      "sales": {
+        "label": "Venta de Piezas",
+        "eletric-line": "Línea Eléctrica",
+        "mechanical-line": "Línea Mecánica"
+      }
     }
   }
 }

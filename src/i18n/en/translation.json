@@ -2,7 +2,33 @@
   "main-navbar": {
     "links": {
       "home": "Home",
-      "about-us": "About Us"
+      "about-us": "About Us",
+
+      "machines": {
+        "label": "Machines",
+        "manual": {
+          "label": "Manual",
+          "flamer": "Manual Flamer"
+        },
+        "semi-automatic": {
+          "label": "Semi-Automatic",
+          "universal-screen-printer": "Universal Screen Printer",
+          "drying-oven": "UV Drying Oven",
+          "gallons": "Gallon Screen Printer"
+        },
+        "automatic": {
+          "label": "Automatic",
+          "uv": "UV / 1 Color",
+          "cylindric-uv": "Cylindrical UV / 2 Colors"
+        }
+      },
+      "reform": "Reform",
+      "tools": "Tools",
+      "sales": {
+        "label": "Sales of Parts",
+        "eletric-line": "Electric Line",
+        "mechanical-line": "Mechanical Line"
+      }
     }
   }
 }
