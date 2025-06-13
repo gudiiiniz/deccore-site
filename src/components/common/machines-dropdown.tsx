@@ -1,33 +1,46 @@
 import { useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export default function MachinesDropdown() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative group inline-block">
       <button className="px-4 py-2 text-white rounded cursor-pointer flex flex-row items-center hover:underline">
-        Máquinas
+        {t("main-navbar.links.machines.label")}
         <ChevronDown size={20} />
       </button>
 
       <div className="absolute left-0 mt-2 w-52 bg-[#0e0458f0] border rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200 z-60">
         <DropdownItem
-          label="Manuais"
-          submenu={[{ label: "Flamador Manual", link: "/flamador-manual" }]}
-        />
-        <DropdownItem
-          label="Semiautomáticas"
+          label={t("main-navbar.links.machines.manual.label")}
           submenu={[
-            { label: "Serigrafia Universal", link: "/serigrafia-universal" },
-            { label: "Estufa de Secagem UV", link: "/estufa-secagem" },
-            { label: "Serigrafia para Galões", link: "/serigrafia-galoes" },
+            {
+              label: t("main-navbar.links.machines.manual.flamer"),
+              link: "/flamador-manual",
+            },
           ]}
         />
         <DropdownItem
-          label="Automáticas"
+          label={t("main-navbar.links.machines.semi-automatic.label")}
           submenu={[
-            { label: "UV / 1 Cor", link: "/uv" },
-            { label: "Cilíndrica UV / 2 Cores", link: "cilindrica-uv" },
+            {
+              label: t(
+                "main-navbar.links.machines.semi-automatic.universal-screen-printer"
+              ),
+              link: "/serigrafia-universal",
+            },
+            { label: t("main-navbar.links.machines.semi-automatic.drying-oven"), link: "/estufa-secagem" },
+            { label: t("main-navbar.links.machines.semi-automatic.gallons"), link: "/serigrafia-galoes" },
+          ]}
+        />
+        <DropdownItem
+          label={t("main-navbar.links.machines.automatic.label")}
+          submenu={[
+            { label: t("main-navbar.links.machines.automatic.uv"), link: "/uv" },
+            { label: t("main-navbar.links.machines.automatic.cylindric-uv"), link: "cilindrica-uv" },
           ]}
         />
       </div>

@@ -1,38 +1,32 @@
+import { useTranslation } from "react-i18next";
+
 export default function Certificates() {
+  const { t } = useTranslation();
+
   return (
     <section className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between mt-10 gap-10 mb-20">
       <div className="w-full lg:w-1/2">
         <img src={"iso.webp"} alt="iso" className="mx-auto" />
         <h2 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-10 text-center lg:text-left">
-          Reconhecidos com a Certificação ISO 9001 🏆
+          {t("home.certificates.title")}
         </h2>
         <p className="mt-4 text-justify text-sm sm:text-base">
-          É com enorme orgulho que anunciamos um marco histórico para a Deccore
-          Serigrafia e para o setor de máquinas serigráficas no Brasil. Somos a
-          primeira empresa do segmento a conquistar a certificação ISO 9001, um
-          reconhecimento internacional que valida nosso compromisso com a
-          qualidade, eficiência e satisfação dos nossos clientes.
-          <br />
-          <br />A ISO 9001 é um padrão globalmente reconhecido que certifica
-          empresas com processos de gestão de qualidade robustos e bem
-          estruturados. Essa conquista reflete nosso empenho em oferecer
-          máquinas serigráficas de alta performance, com foco na inovação e na
-          melhoria contínua.
+          {t("home.certificates.text1")}
           <br />
           <br />
-          <b>O que isso significa para você?</b>
+          {t("home.certificates.text2")}
           <br />
-          <b>Mais confiança</b>: produtos com qualidade consistente.
           <br />
-          <b>Excelência garantida</b>: alinhados às melhores práticas
-          internacionais.
+          <b>{t("home.certificates.text3")}</b>
           <br />
-          <b>Compromisso com o futuro</b>: soluções que atendem às suas
-          necessidades hoje e sempre.
+          <b>{t("home.certificates.text4")}</b>
+          {t("home.certificates.text5")}
           <br />
-          <br />A conquista da ISO 9001 é resultado da dedicação da nossa equipe
-          e da confiança de nossos clientes. Obrigado por fazer parte dessa
-          história!
+          <b>{t("home.certificates.text6")}</b>
+          {t("home.certificates.text7")} <br />
+          <b>{t("home.certificates.text8")}</b>{t("home.certificates.text9")}
+          <br />
+          <br />{t("home.certificates.text10")}
         </p>
       </div>
       <div className="w-full lg:w-1/2 shadow-2xl">

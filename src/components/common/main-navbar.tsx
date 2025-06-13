@@ -29,19 +29,19 @@ export default function MainNavbar() {
       link: "/sobre-nos",
     },
     {
-      label: "Máquinas",
+      label: t("main-navbar.links.machines.label"),
       link: "/#",
     },
     {
-      label: "Reforma",
+      label: t("main-navbar.links.reform"),
       link: "/reforma",
     },
     {
-      label: "Ferramentas",
+      label: t("main-navbar.links.tools"),
       link: "/ferramentas",
     },
     {
-      label: "Venda de Peças",
+      label: t("main-navbar.links.sales.label"),
       link: "/#",
     },
   ];
@@ -117,11 +117,11 @@ export default function MainNavbar() {
         >
           <nav className="mt-14 p-4 space-y-2 z-50">
             <NavLink href="/" setOpen={setOpen}>
-              Home
+              {t("main-navbar.links.home")}
             </NavLink>
 
             <NavLink href="/sobre-nos" setOpen={setOpen}>
-              Sobre Nós
+              {t("main-navbar.links.about-us")}
             </NavLink>
 
             <div>
@@ -129,7 +129,7 @@ export default function MainNavbar() {
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 className="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-100 rounded text-[#0E0458]"
               >
-                Máquinas
+                {t("main-navbar.links.machines.label")}
                 {dropdownOpen ? (
                   <ChevronUp className="w-4 h-4" />
                 ) : (
@@ -139,44 +139,50 @@ export default function MainNavbar() {
               {dropdownOpen && (
                 <div className="ml-4 mt-1 space-y-2">
                   <div className="flex flex-row items-center mt-3">
-                    <h3 className="text-[#0E0458]">Manual</h3>
+                    <h3 className="text-[#0E0458]">
+                      {t("main-navbar.links.machines.manual.label")}
+                    </h3>
                     <ChevronDown size={20} className="text-[#0E0458]" />
                   </div>
                   <NavLink href="/flamador-manual" setOpen={setOpen}>
-                    Flamador Manual
+                    {t("main-navbar.links.machines.manual.flamer")}
                   </NavLink>
                   <div className="flex flex-row items-center mt-3">
-                    <h3 className="text-[#0E0458]">Semiautomática</h3>
+                    <h3 className="text-[#0E0458]">
+                      {t("main-navbar.links.machines.semi-automatic.label")}
+                    </h3>
                     <ChevronDown size={20} className="text-[#0E0458]" />
                   </div>
                   <NavLink href="/serigrafia-universal" setOpen={setOpen}>
-                    Serigrafia Universal
+                    {t(
+                      "main-navbar.links.machines.semi-automatic.universal-screen-printer"
+                    )}
                   </NavLink>
                   <NavLink href="/estufa-secagem" setOpen={setOpen}>
-                    Estufa de Secagem UV
+                    {t("main-navbar.links.machines.semi-automatic.drying-oven")}
                   </NavLink>
                   <NavLink href="/serigrafia-galoes" setOpen={setOpen}>
-                    Serigrafia para Galões
+                    {t("main-navbar.links.machines.semi-automatic.gallons")}
                   </NavLink>
                   <div className="flex flex-row items-center mt-3">
-                    <h3 className="text-[#0E0458]">Automáticas</h3>
+                    <h3 className="text-[#0E0458]">{t("main-navbar.links.machines.automatic.label")}</h3>
                     <ChevronDown size={20} className="text-[#0E0458]" />
                   </div>
                   <NavLink href="/uv" setOpen={setOpen}>
-                    UV / 1 Cor
+                    {t("main-navbar.links.machines.automatic.uv")}
                   </NavLink>
                   <NavLink href="/cilindrica-uv" setOpen={setOpen}>
-                    Cilindríca UV / 2 Cores
+                    {t("main-navbar.links.machines.automatic.cylindric-uv")}
                   </NavLink>
                 </div>
               )}
             </div>
 
             <NavLink href="/reforma" setOpen={setOpen}>
-              Reforma
+              {t("main-navbar.links.reform")}
             </NavLink>
             <NavLink href="/ferramentas" setOpen={setOpen}>
-              Ferramentas
+              {t("main-navbar.links.tools")}
             </NavLink>
 
             <div>
@@ -184,7 +190,7 @@ export default function MainNavbar() {
                 onClick={() => setDropdownOpen2(!dropdownOpen2)}
                 className="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-100 rounded text-[#0E0458]"
               >
-                Venda de Peças
+                {t("main-navbar.links.sales.label")}
                 {dropdownOpen2 ? (
                   <ChevronUp className="w-4 h-4" />
                 ) : (
@@ -194,10 +200,10 @@ export default function MainNavbar() {
               {dropdownOpen2 && (
                 <div className="ml-4 mt-1 space-y-2">
                   <NavLink href="/linha-eletrica" setOpen={setOpen}>
-                    Linha Elétrica
+                  {t("main-navbar.links.sales.eletric-line")}
                   </NavLink>
                   <NavLink href="/linha-mecanica" setOpen={setOpen}>
-                    Linha Mecânica
+                    {t("main-navbar.links.sales.mechanical-line")}
                   </NavLink>
                 </div>
               )}
