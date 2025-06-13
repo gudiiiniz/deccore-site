@@ -1,10 +1,9 @@
 export default function AboutUs() {
   return (
     <>
-      <div className="py-10 w-2/3 mx-auto text-center">
+      <div className="py-10 px-4 max-w-4xl mx-auto text-center">
         <h2 className="text-2xl text-[#0E0458] font-semibold">Sobre Nós</h2>
-
-        <p className="pt-5 text-justify">
+        <p className="pt-5 text-justify text-sm sm:text-base">
           A Deccore Serigrafia foi fundada no ano de 2000 como empresa de
           representações e revenda de produtos para serigrafia. Em 2014,
           transformou-se em indústria, justamente quando foi detectada, pelo seu
@@ -59,11 +58,11 @@ export default function AboutUs() {
           projetos especiais atendendo as necessidades de nossos clientes.
         </p>
       </div>
-      <div className="pt-10 pb-10 w-2/3 mx-auto">
+      <div className="pt-10 pb-10 px-4 max-w-4xl mx-auto">
         <h2 className="text-2xl text-[#0E0458] font-semibold mb-8 text-center">
           Onde Estamos
         </h2>
-        <div className="w-full h-[600px] mx-auto">
+        <div className="w-full h-[400px] sm:h-[600px] mx-auto">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.7674488698435!2d-46.48899332397985!3d-23.46885145820135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce603019951649%3A0x3230c951c21ebb98!2sR.%20Jo%C3%A3o%20Alfredo%2C%20478%20-%20Cumbica%2C%20Guarulhos%20-%20SP%2C%2007224-120!5e0!3m2!1spt-BR!2sbr!4v1749675424556!5m2!1spt-BR!2sbr"
             width="100%"

@@ -22,20 +22,20 @@ export default function Reform() {
         muted
         loop
         playsInline
-        className="w-full h-[800px] object-fill"
+        className="w-full h-[300px] sm:h-[600px] lg:h-[800px] object-cover"
       ></video>
 
-      <div className="py-10 w-2/3 mx-auto text-center">
+      <div className="py-10 px-4 w-full max-w-6xl mx-auto text-center">
         <h2 className="text-2xl text-[#0E0458] font-semibold">
           Reforma de Máquinas
         </h2>
       </div>
 
-      <section className="pb-10 w-2/3 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+      <section className="pb-10 px-4 w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {images.map((img, idx) => (
           <div
             key={idx}
-            className="relative w-72 aspect-square rounded-sm overflow-hidden mx-auto cursor-pointer"
+            className="relative w-full aspect-square rounded-sm overflow-hidden cursor-pointer"
             onClick={() => setIndex(idx)}
           >
             <Image

@@ -17,7 +17,7 @@ export default function Tools() {
 
   return (
     <>
-      <div className="w-full h-[600px] relative">
+      <div className="w-full h-[300px] sm:h-[500px] lg:h-[600px] relative">
         <Image
           src={"/tools/banner.jpg"}
           alt="Banner"
@@ -26,11 +26,11 @@ export default function Tools() {
         />
       </div>
 
-      <section className="w-2/3 mx-auto flex flex-col text-center py-20">
+      <section className="w-full max-w-6xl px-4 mx-auto flex flex-col text-center py-20">
         <h2 className="text-2xl text-[#0E0458] font-semibold">
           Peças e Ferramentas
         </h2>
-        <div className="w-full mx-auto grid grid-cols-4 gap-10 mt-14 justify-items-center">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-14">
           {images.map((img, idx) => (
             <div
               key={idx}

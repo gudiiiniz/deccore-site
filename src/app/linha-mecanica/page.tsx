@@ -18,12 +18,13 @@ export default function Mechanical() {
 
   return (
     <>
-      <div className="w-full h-[600px] relative">
+      <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
         <Image
-          src={"/mechanical/banner.jpg"}
+          src="/mechanical/banner.jpg"
           alt="Banner linha mecânica"
           fill
           className="object-cover"
+          priority
         />
       </div>
 
@@ -34,7 +35,11 @@ export default function Mechanical() {
         <p className="font-semibold mt-1">Linha Mecânica</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-18">
           {images.map((img, idx) => (
-            <div key={idx} onClick={() => setIndex(idx)} className="cursor-pointer">
+            <div
+              key={idx}
+              onClick={() => setIndex(idx)}
+              className="cursor-pointer"
+            >
               <SalesCard
                 imageSrc={img.src}
                 title={mechanicalTools[idx].title}

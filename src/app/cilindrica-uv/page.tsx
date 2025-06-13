@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CylindricalUV() {
   return (
     <>
-      <div className="w-full h-[600px] relative overflow-hidden">
+      <div className="w-full h-[300px] sm:h-[600px] relative overflow-hidden">
         <video
           src="/cylindrical-uv/banner-video.mp4"
           autoPlay
@@ -14,8 +14,8 @@ export default function CylindricalUV() {
         ></video>
       </div>
 
-      <section className="w-2/3 mx-auto pt-40 pb-40 flex flex-row gap-5">
-        <div className="w-1/2">
+      <section className="w-full max-w-6xl px-4 mx-auto pt-20 pb-20 flex flex-col lg:flex-row gap-10">
+        <div className="w-full lg:w-1/2">
           <h2 className="text-[#0E0458] text-2xl text-center font-semibold">
             Máquina Serigráfica Automática
             <br /> Cilíndrica Secagem UV (02 Cores) <br />
@@ -26,9 +26,9 @@ export default function CylindricalUV() {
           </p>
         </div>
 
-        <div className="w-1/2 flex flex-col">
-          <div className="overflow-hidden rounded-lg shadow-md">
-            <table className="w-full text-sm">
+        <div className="w-full lg:w-1/2 flex flex-col">
+          <div className="overflow-x-auto rounded-lg shadow-md">
+            <table className="w-full text-sm min-w-[300px]">
               <thead>
                 <tr className="bg-blue-500 text-white text-left">
                   <th className="px-4 py-2 font-semibold text-center">
@@ -62,7 +62,7 @@ export default function CylindricalUV() {
       </section>
 
       <section
-        className="mx-auto pt-20 pb-20"
+        className="w-full px-4 mx-auto pt-20 pb-20"
         style={{
           boxShadow: "0 -4px 6px -1px rgba(0,0,0,0.1)",
         }}
@@ -71,13 +71,13 @@ export default function CylindricalUV() {
           Portifólio do Equipamento
         </h2>
 
-        <div className="flex justify-center pt-5">
+        <div className="flex justify-center pt-10">
           <Image
             src="/cylindrical-uv/cylindrical-uv-1.jpg"
             alt="cylindrical-uv-1.jpg"
             width={400}
             height={1000}
-            className="rounded-md shadow-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+            className="rounded-md shadow-lg cursor-pointer hover:scale-105 transition-transform duration-300 object-cover max-w-full h-auto"
           />
         </div>
       </section>
