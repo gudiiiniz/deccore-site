@@ -1,6 +1,7 @@
 import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
 import MainNavbar from "@/components/common/main-navbar";
+import PageUpButton from "@/components/common/page-up-button";
 import WButton from "@/components/common/wpp-button";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
@@ -41,6 +42,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <WButton />
+        <PageUpButton />
       </body>
     </html>
   );

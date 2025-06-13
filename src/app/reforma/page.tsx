@@ -1,6 +1,19 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
+import Lightbox from "yet-another-react-lightbox";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 export default function Reform() {
+  const [index, setIndex] = useState(-1);
+
+  const images = Array.from({ length: 8 }, (_, idx) => ({
+    src: `/reform/reform-${idx + 1}.jpg`,
+  }));
+
   return (
     <>
       <video
@@ -18,14 +31,15 @@ export default function Reform() {
         </h2>
       </div>
 
-      <section className="pb-10 w-2/3 mx-auto grid grid-cols-4 gap-10">
-        {Array.from({ length: 8 }).map((_, idx) => (
+      <section className="pb-10 w-2/3 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        {images.map((img, idx) => (
           <div
             key={idx}
             className="relative w-72 aspect-square rounded-sm overflow-hidden mx-auto cursor-pointer"
+            onClick={() => setIndex(idx)}
           >
             <Image
-              src={`/reform/reform-${idx + 1}.jpg`}
+              src={img.src}
               alt={`Reforma ${idx + 1}`}
               fill
               className="object-cover"
@@ -33,6 +47,14 @@ export default function Reform() {
           </div>
         ))}
       </section>
+
+      <Lightbox
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        slides={images}
+        plugins={[Zoom, Fullscreen]}
+      />
     </>
   );
 }
