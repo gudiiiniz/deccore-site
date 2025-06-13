@@ -1,22 +1,23 @@
+"use client";
 import Machines from "@/components/common/machines";
+import { useTranslation } from "react-i18next";
 
 export default function ScreenPrintingGallons() {
+  const { t } = useTranslation();
   return (
     <Machines
       bannerSrc={"/gallons/banner.jpg"}
       title={
         <p>
-          Máquina Serigráfica para gravação <br />
-          em galão de 20 litros
+          {t("gallons.title")} <br />
+          {t("gallons.title2")}
         </p>
       }
-      subtitle={"Linha Semiautomática"}
+      subtitle={t("gallons.subtitle")}
       model={"XXXX"}
-      modelType={"Semiautomática"}
+      modelType={t("machines.type-semiautomatic")}
       productivity={"500 à 700 P/H"}
-      description={
-        "Equipamento para gravação de galões de 20 Litros. A embalagem pode ser gravada em duas etapas, sendo uma imagem frontal e a outra do verso."
-      }
+      description={t("gallons.desc")}
       imagesSrc={["/gallons/photo1.jpg"]}
     />
   );

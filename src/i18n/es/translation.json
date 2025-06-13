@@ -103,5 +103,105 @@
       "text2": "Con un enfoque continuo en la innovación y la calidad, nuestro equipo está comprometido activamente con la tecnología y los especialistas del sector para aportar conocimientos y soluciones que puedan elevar aún más la eficiencia y la precisión de nuestros productos. La participación en el evento subraya nuestro compromiso no solo con el crecimiento de Deccore Serigrafía, sino también con el avance del sector en su conjunto.",
       "text3": "Al explorar las novedades presentadas en el evento, buscamos incorporar avances tecnológicos que aseguren a nuestros clientes el acceso a las soluciones más eficaces en serigrafía automática."
     }
+  },
+
+  "about-us": {
+    "title": "Sobre Nosotros",
+    "text1": "Deccore Seriografia fue fundada en el año 2000 como empresa de representación y reventa de productos de serigrafía. En 2014 se convirtió en industria, precisamente cuando su propietario detectó la necesidad de atender a unos clientes que necesitaban renovación y mantenimiento en sus máquinas de serigrafía.",
+    "text2": "Con el aumento de la demanda comenzamos a fabricar y suministrar piezas y equipos para el mercado de serigrafía en general, y pronto vimos la oportunidad de fabricar nuevas máquinas. Hoy, además de continuar con nuestros trabajos de asistencia técnica y renovación, también fabricamos máquinas para diversos segmentos. Deccore Serigrafía cuenta con tecnología y experiencia comprobada en atender el mercado de la serigrafía, trabajando intensamente en Proyectos Especiales y de Automatización, de acuerdo a las necesidades y desafíos que presentan nuestros clientes.",
+    "text3": "Nuestra línea de fabricación cuenta con Máquinas Automáticas y Semiautomáticas, fabricando Hornos UV, Sopletes, Alimentadores, utillajes diversos y repuestos en general.",
+    "text4": "Nuestros empleados tienen una larga experiencia en la fabricación de máquinas y buscamos constantemente satisfacer las necesidades del mercado de serigrafía, utilizando las más modernas y avanzadas tecnologías disponibles. Estamos capacitados para desarrollar proyectos de acuerdo al perfil y necesidades reales que requiere el segmento de serigrafía.",
+    "text5": "Deccore Serigrafía es una empresa nacional que ha desarrollado un alto nivel de experiencia para producir y renovar máquinas de serigrafía pequeñas, medianas y grandes, gracias a su metodología de trabajo que permite un control y seguimiento total en todas las etapas del proceso constructivo.",
+    "text6": "Estamos siempre buscando las mejores opciones y proveedores para sus equipos y componentes de máquinas en Brasil y en el exterior, participando como expositor y visitante en ferias del sector y manteniendo contacto con socios dentro y fuera del país. Estamos capacitados para desarrollar proyectos encaminados a satisfacer plenamente las expectativas y necesidades de los clientes, quienes pueden acompañar todo el proceso de fabricación, participando desde la preparación del proyecto, pasando por la ejecución y finalización de sus equipos.",
+    "text7": "Nuestro parque industrial cuenta con equipos de avanzada tecnología para la producción de nuestras máquinas, brindando un alto nivel de calidad. Contamos con empleados altamente calificados para brindar asistencia técnica para mantenimiento o reemplazo de piezas y equipos.",
+    "text8": "También contamos con una amplia gama de productos consumibles para la industria serigráfica, como tintas, telas para serigrafía, cauchos de impresión, lámparas UV, entre otros. Desarrollamos proyectos especiales satisfaciendo las necesidades de nuestros clientes.",
+    "title2": "Dónde Estamos"
+  },
+
+  "footer": {
+    "infos": {
+      "phone": "Atención al Cliente: 55 11 3857-4582",
+      "address1": "Rua João Alfredo, 478 - Cidade Industrial Satélite",
+      "address2": "Cumbica - Guarulhos - SP - Brasil",
+      "rights": "Todos los derechos reservados | Deccore © 2025"
+    },
+    "links": {
+      "remodeling": "Remodelación",
+      "tooling": "Herramientas",
+      "electric": "Línea Eléctrica",
+      "mechanical": "Línea Mecánica",
+      "flamer": "Manual del Flameador",
+      "universal": "Serigrafía Universal",
+      "uv-drying": "Horno de Secado UV",
+      "gallons": "Serigrafía por Galones",
+      "cylindrical": "UV cilíndrico / 2 Colores",
+      "uv": "UV / 1 Cor"
+    }
+  },
+
+  "flamer": {
+    "title": "Lanzallamas con Bomba de Agua",
+    "subtitle": "Línea Manual",
+    "desc": "Lanzallamas para envases, utilizado para realizar tratamientos superficiales en envases de PE y PP mediante llamas."
+  },
+
+  "machines": {
+    "title": "Portafolio de Equipos",
+    "model": "Modelo",
+    "type": "Tipo",
+    "productivity": "Productividad",
+    "type-automatic": "Automática",
+    "type-semiautomatic": "Semiautomática"
+  },
+
+  "universal": {
+    "title": "Máquina de Serigrafía Universal",
+    "subtitle": "Línea Semiautomática",
+    "desc": "Máquina de serigrafía. Semiautomático. Equipos para grabar objetos ovalados, planos, cilíndricos y cónicos."
+  },
+
+  "uv-drying": {
+    "title": "Horno de secado UV",
+    "subtitle": "Línea semiautomática",
+    "desc": "La estufa de secado se encarga del secado de las emulsiones serigrafiadas sobre la superficie de los envases de vidrio, PE y PP."
+  },
+
+  "gallons": {
+    "title": "Máquina de serigrafía para grabado",
+    "title2": "en galones de 20 litros",
+    "subtitle": "Línea semiautomática",
+    "desc": "Equipo para registro de galones de 20 litros. El embalaje se puede grabar en dos etapas, una imagen en el anverso y otra en el reverso."
+  },
+
+  "uv": {
+    "title": "Máquina de serigrafía automática con Secado UV (01 Color)",
+    "subtitle": "Línea Automática",
+    "desc": "Botellas cilíndricas o cónicas con un diámetro máximo de 90 mm y una altura máxima de hasta 270 mm. Descripción: La máquina de serigrafía se encarga de realizar la impresión permeagráfica (texto o figura) sobre superficies de diferentes tipos de envases de vidrio, PE y PP."
+  },
+
+  "cylindrical": {
+    "title": "Máquina de serigrafía cilíndrica",
+    "title2": "automática, secado UV (02",
+    "title3": "colores), producción doble",
+    "subtitle": "Línea Automática",
+    "desc": "Botellas cilíndricas con un diámetro máximo de 90 mm y una altura máxima de hasta 270 mm. La máquina de serigrafía se encarga de realizar la impresión permeagráfica (texto o figura) sobre superficies de distintos tipos de envases de vidrio, PE y PP."
+  },
+
+  "remodeling": {
+    "title": "Renovación de Máquinas"
+  },
+
+  "tools": {
+    "title": "Piezas y Herramientas"
+  },
+
+  "electric": {
+    "title": "Deccore Piezas Online",
+    "subtitle": "Línea Eléctrica"
+  },
+
+  "mechanical": {
+    "title": "Deccore Piezas Online",
+    "subtitle": "Línea Mecánica"
   }
 }

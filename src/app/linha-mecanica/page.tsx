@@ -8,6 +8,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
+import { useTranslation } from "react-i18next";
 
 export default function Mechanical() {
   const [index, setIndex] = useState(-1);
@@ -15,6 +16,8 @@ export default function Mechanical() {
   const images = Array.from({ length: 41 }, (_, idx) => ({
     src: `/mechanical/photo (${idx}).jpg`,
   }));
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -30,9 +33,9 @@ export default function Mechanical() {
 
       <section className="w-5/6 mx-auto flex flex-col text-center py-20">
         <h2 className="text-2xl text-[#0E0458] font-semibold">
-          Deccore Peças On-Line
+          {t("mechanical.title")}
         </h2>
-        <p className="font-semibold mt-1">Linha Mecânica</p>
+        <p className="font-semibold mt-1">{t("mechanical.subtitle")}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-18">
           {images.map((img, idx) => (
             <div
