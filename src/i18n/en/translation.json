@@ -2,7 +2,207 @@
   "main-navbar": {
     "links": {
       "home": "Home",
-      "about-us": "About Us"
+      "about-us": "About Us",
+
+      "machines": {
+        "label": "Machines",
+        "manual": {
+          "label": "Manual",
+          "flamer": "Manual Flamer"
+        },
+        "semi-automatic": {
+          "label": "Semi-Automatic",
+          "universal-screen-printer": "Universal Screen Printer",
+          "drying-oven": "UV Drying Oven",
+          "gallons": "Gallon Screen Printer"
+        },
+        "automatic": {
+          "label": "Automatic",
+          "uv": "UV / 1 Color",
+          "cylindric-uv": "Cylindrical UV / 2 Colors"
+        }
+      },
+      "reform": "Reform",
+      "tools": "Tools",
+      "sales": {
+        "label": "Sales of Parts",
+        "eletric-line": "Electric Line",
+        "mechanical-line": "Mechanical Line"
+      }
     }
+  },
+
+  "home": {
+    "banner": {
+      "text1": "Manufacture of",
+      "text2": "Screen Printing Machines"
+    },
+    "certificates": {
+      "title": "Recognized with ISO 9001 Certification 🏆",
+      "text1": "We are extremely proud to announce a historic milestone for Deccore Serigrafia and the screen printing machinery sector in Brazil. We are the first company in the segment to achieve ISO 9001 certification, an international recognition that validates our commitment to quality, efficiency, and customer satisfaction.",
+      "text2": "ISO 9001 is a globally recognized standard that certifies companies with strong and well-structured quality management processes. This achievement reflects our dedication to delivering high-performance screen printing machines, with a focus on innovation and continuous improvement.",
+      "text3": "What does this mean for you?",
+      "text4": "More confidence",
+      "text5": ": products with consistent quality.",
+      "text6": "Guaranteed excellence",
+      "text7": ": aligned with the best international practices.",
+      "text8": "Commitment to the future",
+      "text9": ": solutions that meet your needs now and always.",
+      "text10": "Achieving ISO 9001 is the result of our team's dedication and the trust of our clients. Thank you for being part of this story!"
+    },
+    "photo-grid": {
+      "photo1": {
+        "label1": "Manual Machines",
+        "label2": "Flamer"
+      },
+      "photo2": {
+        "label1": "Semi-Automatic Machines",
+        "label2": "Universal Screen Printer"
+      },
+      "photo3": {
+        "label1": "Semi-Automatic Machines",
+        "label2": "UV Drying Oven"
+      },
+      "photo4": {
+        "label1": "Semi-Automatic Machines",
+        "label2": "Screen Printer for Gallons"
+      },
+      "photo5": {
+        "label1": "Automatic Machines",
+        "label2": "UV / 1 Color"
+      },
+      "photo6": {
+        "label1": "Automatic Machines",
+        "label2": "Cylindrical UV / 2 Colors"
+      }
+    },
+    "section1": {
+      "title1": "About Us",
+      "text1": "Deccore Serigrafia was founded in 2000 as a representation and resale company for screen printing products. In 2014, it became a manufacturing company, precisely when its owner identified the need to assist clients requiring refurbishment and maintenance of their screen printing machines.",
+      "text2": "With increasing demand, we began manufacturing and supplying parts and equipment for the screen printing market in general, and soon saw the opportunity to produce new machines. Today, in addition to continuing our work with technical support and refurbishing, we also manufacture machines for various segments. Deccore Serigrafia has proven technology and experience in serving the screen printing market, working intensively on Special and Automation Projects, according to the needs and challenges presented by our clients.",
+      "text3": "Our manufacturing line includes Automatic and Semi-Automatic Machines, UV Ovens, Flamer Machines, Feeders, various tooling, and general parts.",
+      "text4": "Our employees have extensive experience in machine manufacturing, and we constantly strive to meet the needs of the screen printing market using the most modern and advanced technologies available. We are capable of developing projects according to the profile and actual needs required by the screen printing segment.",
+      "text5": "Deccore Serigrafia is a Brazilian company that has developed a high level of expertise to produce and refurbish small, medium, and large screen printing machines, thanks to its work methodology that allows full control and monitoring of every stage of the construction process.",
+      "title2": "3D Printer Now in Operation!",
+      "text6": "We are excited to announce that Deccore Serigrafia now has a state-of-the-art 3D printer already in operation at our company! With this acquisition, we are ready to take our services to a new level of innovation and customization.",
+      "text7": "The new 3D printer allows us to create parts and prototypes with high precision and detail, meeting the specific needs of each client. Whether for developing new products or customizing existing projects, we are prepared to offer unique and creative solutions.",
+      "text8": "We invite you to discover how this technology can benefit your next project. Contact us to learn more about how we can turn your ideas into reality with the quality and excellence you already know."
+    },
+    "section2": {
+      "title": "Plástico Brasil 2025",
+      "subtitle": "Presence with innovative screen printing automation solutions",
+      "text1": "Deccore Serigrafia, a national reference in the manufacturing and refurbishment of automatic screen printing machines, is participating in the 2025 edition of Plástico Brasil – International Plastic Fair, which takes place from March 24 to 28 at São Paulo Expo.",
+      "text2": "With a track record marked by technical excellence and a focus on innovation, Deccore brings to the event its screen printing automation solutions, developed to serve companies looking to modernize their processes with high-productivity, precision, and reliability equipment.",
+      "text3": "During the five days of the fair, visitors will be able to experience firsthand the advantages of Deccore’s automatic machines, designed to optimize screen printing processes across various industrial applications. The company will also showcase its equipment refurbishment and modernization service — an efficient alternative for those looking to update their production line with excellent cost-benefit.",
+      "text4": "“Plástico Brasil is a major showcase for the industry, and for us at Deccore, it’s an opportunity to demonstrate our commitment to developing custom solutions for the market. We are ready to meet our clients' challenges with technology, quality, and specialized technical support,” says the company’s technical team.",
+      "text5": "Deccore’s participation in the fair reinforces its position as a strategic partner for companies investing in automation and continuous improvement, contributing to the advancement of screen printing in Brazil. Industry professionals, buyers, and innovation enthusiasts are invited to visit the company’s booth, check out the latest developments, and speak with the technical team."
+    },
+    "section3": {
+      "title": "Deccore Serigrafia in Constant Innovation:",
+      "subtitle": "Exploring New Partnerships and Technologies at NPE 2024 in Orlando",
+      "text1": "Our management team, represented by Rogério Cunha and Renan Cunha, is attending NPE2024 The Plastics Show, one of the most iconic events in the plastics industry, held in Orlando, Florida, USA. This international event serves as a crucial stage for exploring new technologies and establishing strategic partnerships that can revolutionize the automatic screen printing machine market.",
+      "text2": "With a continuous focus on innovation and quality, our team is actively engaging with technology and industry experts to bring knowledge and solutions that can further enhance the efficiency and precision of our products. Participation in the event highlights our commitment not only to the growth of Deccore Serigrafia but also to the advancement of the industry as a whole.",
+      "text3": "By exploring the innovations presented at the event, we aim to incorporate technological advances that ensure our clients access to the most effective solutions in automatic screen printing."
+    }
+  },
+
+  "about-us": {
+    "title": "About Us",
+    "text1": "Deccore Serigrafia was founded in 2000 as a representation and resale company for screen printing products. In 2014, it became an industry, precisely when its owner detected the need to serve some customers who needed renovation and maintenance on their screen printing machines.",
+    "text2": "With the increase in demand, we began to manufacture and supply parts and equipment for the screen printing market in general, and we soon saw the opportunity to manufacture new machines. Today, in addition to continuing our technical assistance and renovation work, we also manufacture machines for various segments. Deccore Serigraphy has proven technology and experience in serving the screen printing market, working hard on Special and Automation Projects, according to the needs and challenges presented by our customers.",
+    "text3": "Our manufacturing line has Automatic and Semi-Automatic Machines, manufacturing UV Ovens, Flamers, Feeders, various tooling and parts in general.",
+    "text4": "Our employees have long experience in manufacturing machines and we constantly seek to meet the needs of the screen printing market, using the most modern and advanced technologies available. We are qualified to develop projects according to the profile and real needs required by the screen printing segment.",
+    "text5": "Deccore Serigraphy is a national company that has developed a high level of expertise to produce and refurbish small, medium and large screen printing machines, thanks to its work methodology that allows total control and monitoring at all stages of the construction process.",
+    "text6": "We are always looking for the best options and suppliers for your equipment and machine components in Brazil and abroad, participating as an exhibitor and visitor in sector fairs, and maintaining contact with partners inside and outside the country. We are trained to develop projects aiming to fully meet the expectations and needs of customers, who can follow the entire manufacturing process, participating from the project's preparation, through the execution and finalization of their equipment.",
+    "text7": "Our industrial park has advanced technology equipment for the production of our machines, providing a high level of quality. We have highly qualified employees to provide technical assistance for maintenance or replacement of parts and equipment.",
+    "text8": "We also have a wide range of consumable products for the screen printing industry, such as inks, fabrics for screens, printing rubbers, UV lamps, among others. We develop special projects meeting the needs of our customers.",
+    "title2": "Location"
+  },
+
+  "footer": {
+    "infos": {
+      "phone": "Customer Service: 55 11 3857-4582",
+      "address1": "Rua João Alfredo, 478 - Cidade Industrial Satélite",
+      "address2": "Cumbica - Guarulhos - SP - Brazil",
+      "rights": "All rights reserved | Deccore © 2025"
+    },
+    "links": {
+      "remodeling": "Remodeling",
+      "tooling": "Tooling",
+      "electric": "Electric Line ",
+      "mechanical": "Mechanical Line",
+      "flamer": "Manual Flamer",
+      "universal": "Universal Screen Printing",
+      "uv-drying": "UV Drying Oven",
+      "gallons": "Screen Printing for Gallons",
+      "cylindrical": "Cylindrical UV / 2 Colors",
+      "uv": "UV / 1 Color"
+    }
+  },
+
+  "flamer": {
+    "title": "Flamer with Water Pump",
+    "subtitle": "Manual Line",
+    "desc": "Packaging flamer, used to perform surface treatment on PE and PP packaging using flames."
+  },
+
+  "machines": {
+    "title": "Equipment Portfolio",
+    "model": "Model",
+    "type": "Type",
+    "productivity": "Productivity",
+    "type-automatic": "Automatic",
+    "type-semiautomatic": "Semi-automatic"
+  },
+
+  "universal": {
+    "title": "Universal Screen Printing Machine",
+    "subtitle": "Semi-automatic Line",
+    "desc": "Screen printing machine. Semi automatic. Equipment for engraving objects, oval, flat, cylindrical and conical."
+  },
+
+  "uv-drying": {
+    "title": "UV Drying Oven",
+    "subtitle": "Semi-automatic Line",
+    "desc": "The drying oven is responsible for drying screen-printed emulsions on the surface of glass, PE and PP packaging."
+  },
+
+  "gallons": {
+    "title": "Screen Printing Machine for",
+    "title2": "engraving on 20 liter gallons",
+    "subtitle": "Semi-automatic Line",
+    "desc": "Equipment for recording 20-liter gallons. The packaging can be engraved in two stages, one image on the front and the other on the back."
+  },
+
+  "uv": {
+    "title": "Automatic Screen Printing Machine with UV Drying (01 Color)",
+    "subtitle": "Automatic Line",
+    "desc": "Cylindrical or conical bottles with a maximum diameter of 90 mm and a maximum height of up to 270 mm. Description: The screen printing machine is responsible for performing permeagraphic printing (text or figure) on surfaces of different types of glass, PE and PP packaging."
+  },
+
+  "cylindrical": {
+    "title": "Automatic Cylindrical Screen",
+    "title2": "Printing Machine UV Drying (02",
+    "title3": "Colors) Double Production",
+    "subtitle": "Automatic Line",
+    "desc": "Cylindrical bottles with a maximum diameter of 90mm, and a maximum height of up to 270 mm. The screen printing machine is responsible for performing permeagraphic printing (text or figure) on surfaces of different types of glass, PE and PP packaging."
+  },
+
+  "remodeling": {
+    "title": "Machine Refurbishment"
+  },
+
+  "tools": {
+    "title": "Parts and Tooling"
+  },
+
+  "electric": {
+    "title": "Decorate Online Tools",
+    "subtitle": "Electric Line"
+  },
+
+  "mechanical": {
+    "title": "Deccore Online Tools",
+    "subtitle": "Mechanical Line"
   }
 }

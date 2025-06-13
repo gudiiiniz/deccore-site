@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function CylindricalUV() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="w-full h-[300px] sm:h-[600px] relative overflow-hidden">
@@ -17,12 +20,12 @@ export default function CylindricalUV() {
       <section className="w-full max-w-6xl px-4 mx-auto pt-20 pb-20 flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-1/2">
           <h2 className="text-[#0E0458] text-2xl text-center font-semibold">
-            Máquina Serigráfica Automática
-            <br /> Cilíndrica Secagem UV (02 Cores) <br />
-            Dupla Proteção
+            {t("cylindrical.title")}
+            <br /> {t("cylindrical.title2")} <br />
+            {t("cylindrical.title3")}
           </h2>
           <p className="pt-1 text-xl font-semibold text-center">
-            Linha Automática
+            {t("cylindrical.subtitle")}
           </p>
         </div>
 
@@ -32,11 +35,13 @@ export default function CylindricalUV() {
               <thead>
                 <tr className="bg-blue-500 text-white text-left">
                   <th className="px-4 py-2 font-semibold text-center">
-                    Modelo
+                    {t("machines.model")}
                   </th>
-                  <th className="px-4 py-2 font-semibold text-center">Tipo</th>
                   <th className="px-4 py-2 font-semibold text-center">
-                    Produtividade
+                    {t("machines.type")}
+                  </th>
+                  <th className="px-4 py-2 font-semibold text-center">
+                    {t("machines.productivity")}
                   </th>
                 </tr>
               </thead>
@@ -45,18 +50,16 @@ export default function CylindricalUV() {
                   <td className="px-4 py-2 font-bold text-black bg-gray-100 text-center">
                     DECC M.S.C.U.V 1C
                   </td>
-                  <td className="px-4 py-2 text-center">Automática</td>
+                  <td className="px-4 py-2 text-center">
+                    {t("machines.type-automatic")}
+                  </td>
                   <td className="px-4 py-2 text-center">2500 à 3300 P/H</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="w-full pt-10 text-center text-gray-600 text-sm">
-            Frascos cilíndricos com diâmetro máximo 90mm, e altura máxima até
-            270 mm.
-            <br /> A máquina serigráfica é responsável por realizar a impressão
-            permeográfica <br /> (texto ou figura) em superfícies de diversos
-            tipos de embalagens de vidro, PE e PP.
+            {t("cylindrical.desc")}
           </p>
         </div>
       </section>
@@ -68,7 +71,7 @@ export default function CylindricalUV() {
         }}
       >
         <h2 className="text-[#0E0458] text-2xl text-center font-semibold">
-          Portifólio do Equipamento
+          {t("machines.title")}
         </h2>
 
         <div className="flex justify-center pt-10">

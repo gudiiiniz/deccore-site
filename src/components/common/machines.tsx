@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   bannerSrc: string;
@@ -23,6 +25,7 @@ export default function Machines({
   imagesSrc,
 }: Props) {
   const isSingleImage = imagesSrc.length === 1;
+  const { t } = useTranslation();
 
   return (
     <>
@@ -44,11 +47,13 @@ export default function Machines({
               <thead>
                 <tr className="bg-blue-500 text-white text-left">
                   <th className="px-4 py-2 font-semibold text-center">
-                    Modelo
+                    {t("machines.model")}
                   </th>
-                  <th className="px-4 py-2 font-semibold text-center">Tipo</th>
                   <th className="px-4 py-2 font-semibold text-center">
-                    Produtividade
+                    {t("machines.type")}
+                  </th>
+                  <th className="px-4 py-2 font-semibold text-center">
+                    {t("machines.productivity")}
                   </th>
                 </tr>
               </thead>
@@ -76,7 +81,7 @@ export default function Machines({
         }}
       >
         <h2 className="text-[#0E0458] text-2xl text-center font-semibold">
-          Portifólio do Equipamento
+          {t("machines.title")}
         </h2>
 
         <div
