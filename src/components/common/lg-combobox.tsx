@@ -1,5 +1,6 @@
 "use client";
 
+import i18n from "i18next";
 import { useState } from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Button } from "../ui/button";
@@ -9,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 const languages = [
   {
-    value: "pt-BR",
+    value: "pt",
     label: "Português",
   },
   {
@@ -24,7 +25,7 @@ const languages = [
 
 export default function LgCombobox() {
   const [open, setOpen] = useState<boolean>(false);
-  const [value, setValue] = useState<string>("pt-BR");
+  const [value, setValue] = useState<string>("");
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -37,7 +38,7 @@ export default function LgCombobox() {
         >
           {value
             ? languages.find((l) => l.value === value)?.label
-            : "Português"}
+            : "🇧🇷 🇺🇸 🇪🇸"}
           <ChevronsUpDownIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
@@ -52,8 +53,10 @@ export default function LgCombobox() {
                   key={l.value}
                   value={l.value}
                   onSelect={(currentValue) => {
-                    setValue(currentValue === value ? currentValue : currentValue)
-                    setOpen(false)
+                    setValue(currentValue === value ? currentValue : currentValue);
+                    setOpen(false);
+                    i18n.changeLanguage(currentValue);
+                    localStorage.setItem("lang", currentValue);
                   }}
                 >
                   <CheckIcon
