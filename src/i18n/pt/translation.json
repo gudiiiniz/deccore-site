@@ -29,5 +29,79 @@
         "mechanical-line": "Linha Mecânica"
       }
     }
+  },
+
+  "home": {
+    "banner": {
+      "text1": "Fabricação e Reforma de",
+      "text2": "Máquinas Serigráficas"
+    },
+    "certificates": {
+      "title": "Reconhecidos com a Certificação ISO 9001 🏆",
+      "text1": "É com enorme orgulho que anunciamos um marco histórico para a Deccore Serigrafia e para o setor de máquinas serigráficas no Brasil. Somos a primeira empresa do segmento a conquistar a certificação ISO 9001, um reconhecimento internacional que valida nosso compromisso com a qualidade, eficiência e satisfação dos nossos clientes.",
+      "text2": "A ISO 9001 é um padrão globalmente reconhecido que certifica empresas com processos de gestão de qualidade robustos e bem estruturados. Essa conquista reflete nosso empenho em oferecer máquinas serigráficas de alta performance, com foco na inovação e na melhoria contínua.",
+      "text3": "O que isso significa para você?",
+      "text4": "Mais confiança",
+      "text5": ": produtos com qualidade consistente.",
+      "text6": "Excelência garantida",
+      "text7": ": alinhados às melhores práticas internacionais.",
+      "text8": "Compromisso com o futuro",
+      "text9": ": soluções que atendem às suas necessidades hoje e sempre.",
+      "text10": "A conquista da ISO 9001 é resultado da dedicação da nossa equipe e da confiança de nossos clientes. Obrigado por fazer parte dessa história!"
+    },
+    "photo-grid": {
+      "photo1": {
+        "label1": "Máquinas Manuais",
+        "label2": "Flamador"
+      },
+      "photo2": {
+        "label1": "Máquinas Semiautomáticas",
+        "label2": "Serigráfica Universal"
+      },
+      "photo3": {
+        "label1": "Máquinas Semiautomáticas",
+        "label2": "Estufa de Secagem UV"
+      },
+      "photo4": {
+        "label1": "Máquinas Semiautomáticas",
+        "label2": "Serigráfica para Galões"
+      },
+      "photo5": {
+        "label1": "Máquinas Automáticas",
+        "label2": "UV / 1 Cor"
+      },
+      "photo6": {
+        "label1": "Máquinas Automáticas",
+        "label2": "Cilíndrica UV / 2 Cores"
+      }
+    },
+    "section1": {
+      "title1": "Sobre Nós",
+      "text1": "A Deccore Serigrafia foi fundada no ano de 2000 como empresa de representações e revenda de produtos para serigrafia. Em 2014, transformou-se em indústria, justamente quando foi detectada, pelo seu proprietário, a necessidade de atender alguns clientes que precisavam de reforma e manutenção em suas maquinas serigráficas.",
+      "text2": "Com o aumento da demanda, passamos a fabricar e fornecer peças e equipamentos para o mercado serigráfico em geral, e logo vimos a oportunidade de fabricar máquinas novas. Hoje, além de darmos continuidade ao nosso trabalho de assistência técnica e reforma, também fabricamos máquinas para diversos segmentos. A Deccore Serigrafia possui tecnologia e experiência comprovada no atendimento ao mercado serigráfico, trabalhando fortemente em Projetos Especiais e de Automação, conforme necessidades e desafios apresentados pelos nossos clientes.",
+      "text3": "Nossa linha de fabricação dispõe de Máquinas Automáticas e Semi Automáticas, fabricação de Fornos U.V., Flamadores, Alimentadores, ferramentais diversos e peças em geral.",
+      "text4": "Nossos colaboradores possuem longa experiência na fabricação de máquinas e buscamos, constantemente, atender às necessidades do mercado serigráfico, utilizando as mais modernas e avançadas tecnologias disponíveis. Estamos capacitados para desenvolver projetos de acordo com o perfil e a real necessidade exigida pelo segmento serigráficos.",
+      "text5": "A Deccore Serigrafia é uma empresa nacional que desenvolveu alto nível de expertise para produzir e reformar máquinas serigráficas de pequeno, médio e grande porte, graças à sua metodologia de trabalho que possibilita total controle e acompanhamento em todas as etapas do processo construtivo.",
+      "title2": "Impressora 3D já em Operação!",
+      "text6": "Estamos empolgados em anunciar que a Deccore Serigrafia agora conta com uma impressora 3D de última geração, já em operação em nossa empresa! Com esta aquisição, estamos prontos para levar nossos serviços a um novo patamar de inovação e personalização",
+      "text7": "A nova impressora 3D nos permite criar peças e protótipos com alta precisão e detalhamento, atendendo às necessidades específicas de cada cliente. Seja para o desenvolvimento de novos produtos ou para a personalização de projetos existentes, estamos preparados para oferecer soluções únicas e criativas",
+      "text8": "Convidamos você a descobrir como essa tecnologia pode beneficiar seu próximo projeto. Entre em contato conosco para saber mais sobre como podemos transformar suas ideias em realidade com a qualidade e excelência que você já conhece."
+    },
+    "section2": {
+      "title": "Plástico Brasil 2025",
+      "subtitle": "Presença com soluções inovadoras em automação serigráfica",
+      "text1": "A Deccore Serigrafia, referência nacional na fabricação e reforma de máquinas serigráficas automáticas, está participando da edição 2025 da Plástico Brasil – Feira Internacional do Plástico, que acontece entre os dias 24 e 28 de março, no São Paulo Expo.",
+      "text2": "Com uma trajetória marcada pela excelência técnica e foco em inovação, a Deccore leva ao evento suas soluções em automação serigráfica, desenvolvidas para atender empresas que buscam modernizar seus processos com equipamentos de alta produtividade, precisão e confiabilidade.",
+      "text3": "Durante os cinco dias da feira, o público poderá conhecer de perto os diferenciais das máquinas automáticas da Deccore, criadas para otimizar os processos de impressão serigráfica nos mais diversos tipos de aplicações industriais. A empresa também apresenta seu serviço de reforma e modernização de equipamentos, uma alternativa eficiente para quem deseja atualizar sua linha de produção com excelente custo-benefício.",
+      "text4": "“A Plástico Brasil é uma grande vitrine para o setor, e para nós da Deccore, é uma oportunidade de mostrar ao mercado o nosso compromisso com o desenvolvimento de soluções sob medida para a indústria. Estamos prontos para atender os desafios dos nossos clientes com tecnologia, qualidade e suporte técnico especializado”, afirma a equipe técnica da empresa.",
+      "text5": "A participação da Deccore na feira reforça sua posição como parceira estratégica para empresas que desejam investir em automação e melhoria contínua, contribuindo para o avanço da impressão serigráfica no Brasil. Profissionais do setor, compradores e interessados em inovação são convidados a visitar o estande da empresa, conferir as novidades e conversar com a equipe técnica."
+    },
+    "section3": {
+      "title": "Deccore Serigrafia em Constante Inovação:",
+      "subtitle": "Explorando Novas Parcerias e Tecnologias na NPE 2024 em Orlando",
+      "text1": "Nossa diretoria representada por: Rogério Cunha e Renan Cunha, está marcando presença na NPE2024 The Plastics Show, um dos eventos mais emblemáticos do setor de plásticos, realizado em Orlando, Flórida, EUA. Este evento internacional serve como um palco crucial para a exploração de novas tecnologias e o estabelecimento de parcerias estratégicas que podem revolucionar o mercado de máquinas automáticas serigráficas.",
+      "text2": "Com um foco contínuo em inovação e qualidade, nossa equipe está ativamente engajada com tecnologia e especialistas do setor para trazer conhecimentos e soluções que possam elevar ainda mais a eficiência e a precisão de nossos produtos. A participação no evento sublinha nosso compromisso não apenas com o crescimento da Deccore Serigrafia, mas também com o avanço do setor como um todo.",
+      "text3": "Ao explorar as novidades apresentadas no evento, buscamos incorporar avanços tecnológicos que garantam a nossos clientes acesso às mais eficazes soluções em serigrafia automática."
+    }
   }
 }

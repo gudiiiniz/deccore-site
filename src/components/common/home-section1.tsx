@@ -1,66 +1,42 @@
+import { useTranslation } from "react-i18next";
+
 export default function HomeSection1() {
+  const { t } = useTranslation();
+
   return (
     <section className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-between my-10 gap-10 lg:gap-20">
       <div className="w-full lg:w-1/2">
-        <h2 className="text-xl sm:text-2xl font-bold">Sobre Nós</h2>
+        <h2 className="text-xl sm:text-2xl font-bold">
+          {t("home.section1.title1")}
+        </h2>
         <p className="mt-6 sm:mt-10 text-justify text-sm sm:text-base">
-          A Deccore Serigrafia foi fundada no ano de 2000 como empresa de
-          representações e revenda de produtos para serigrafia. Em 2014,
-          transformou-se em indústria, justamente quando foi detectada, pelo seu
-          proprietário, a necessidade de atender alguns clientes que precisavam
-          de reforma e manutenção em suas maquinas serigráficas.
+          {t("home.section1.text1")}
           <br />
           <br />
-          Com o aumento da demanda, passamos a fabricar e fornecer peças e
-          equipamentos para o mercado serigráfico em geral, e logo vimos a
-          oportunidade de fabricar máquinas novas. Hoje, além de darmos
-          continuidade ao nosso trabalho de assistência técnica e reforma,
-          também fabricamos máquinas para diversos segmentos. A Deccore
-          Serigrafia possui tecnologia e experiência comprovada no atendimento
-          ao mercado serigráfico, trabalhando fortemente em Projetos Especiais e
-          de Automação, conforme necessidades e desafios apresentados pelos
-          nossos clientes.
+          {t("home.section1.text2")}
           <br />
           <br />
-          Nossa linha de fabricação dispõe de Máquinas Automáticas e Semi
-          Automáticas, fabricação de Fornos U.V., Flamadores, Alimentadores,
-          ferramentais diversos e peças em geral.
+          {t("home.section1.text3")}
           <br />
           <br />
-          Nossos colaboradores possuem longa experiência na fabricação de
-          máquinas e buscamos, constantemente, atender às necessidades do
-          mercado serigráfico, utilizando as mais modernas e avançadas
-          tecnologias disponíveis. Estamos capacitados para desenvolver projetos
-          de acordo com o perfil e a real necessidade exigida pelo segmento
-          serigráficos.
+          {t("home.section1.text4")}
           <br />
-          <br />A Deccore Serigrafia é uma empresa nacional que desenvolveu alto
-          nível de expertise para produzir e reformar máquinas serigráficas de
-          pequeno, médio e grande porte, graças à sua metodologia de trabalho
-          que possibilita total controle e acompanhamento em todas as etapas do
-          processo construtivo.
+          <br />
+          {t("home.section1.text5")}
         </p>
       </div>
       <div className="w-full lg:w-1/2">
         <h2 className="text-xl sm:text-2xl font-bold">
-          Impressora 3D já em Operação!
+          {t("home.section1.title2")}
         </h2>
         <p className="mt-6 sm:mt-10 text-justify text-sm sm:text-base">
-          Estamos empolgados em anunciar que a Deccore Serigrafia agora conta
-          com uma impressora 3D de última geração, já em operação em nossa
-          empresa! Com esta aquisição, estamos prontos para levar nossos
-          serviços a um novo patamar de inovação e personalização.
+          {t("home.section1.text6")}
           <br />
-          <br /> A nova impressora 3D nos permite criar peças e protótipos com
-          alta precisão e detalhamento, atendendo às necessidades específicas de
-          cada cliente. Seja para o desenvolvimento de novos produtos ou para a
-          personalização de projetos existentes, estamos preparados para
-          oferecer soluções únicas e criativas.
           <br />
-          <br /> Convidamos você a descobrir como essa tecnologia pode
-          beneficiar seu próximo projeto. Entre em contato conosco para saber
-          mais sobre como podemos transformar suas ideias em realidade com a
-          qualidade e excelência que você já conhece.
+          {t("home.section1.text7")}
+          <br />
+          <br />
+          {t("home.section1.text8")}
         </p>
         <video
           className="mt-10 sm:mt-16 rounded-sm w-full h-auto"
