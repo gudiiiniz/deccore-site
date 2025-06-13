@@ -30,7 +30,7 @@ export default function HomeSection3() {
           <br />
           Ao explorar as novidades apresentadas no evento, buscamos incorporar
           avanços tecnológicos que garantam a nossos clientes acesso às mais
-          recentes e eficazes soluções em serigrafia automática.
+          eficazes soluções em serigrafia automática.
         </p>
       </div>
       <div className="w-full lg:w-1/2">

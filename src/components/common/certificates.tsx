@@ -22,17 +22,13 @@ export default function Certificates() {
           <br />
           <b>O que isso significa para você?</b>
           <br />
+          <b>Mais confiança</b>: produtos com qualidade consistente.
           <br />
-          <b>Mais confiança</b>✅<br /> Produtos com qualidade consistente.
-          <br />
-          <br />
-          <b>Excelência garantida</b>✅<br /> Alinhados às melhores práticas
+          <b>Excelência garantida</b>: alinhados às melhores práticas
           internacionais.
           <br />
-          <br />
-          <b>Compromisso com o futuro</b>✅<br /> Soluções que atendem às suas
+          <b>Compromisso com o futuro</b>: soluções que atendem às suas
           necessidades hoje e sempre.
-          <br />
           <br />
           <br />A conquista da ISO 9001 é resultado da dedicação da nossa equipe
           e da confiança de nossos clientes. Obrigado por fazer parte dessa
