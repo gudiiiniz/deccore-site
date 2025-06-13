@@ -1,9 +1,8 @@
 ## TODO:
 
-- [ ] Structure
-- [ ] Whatsapp redirect
-- [ ] Resend (mail sender) integration
-- [ ] I18N (language support) pt-BR, en, es
+- [x] Structure
+- [x] Whatsapp redirect
+- [x] I18N (language support) pt-BR, en, es
 
 ---
 
