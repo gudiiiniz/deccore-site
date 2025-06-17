@@ -4,7 +4,7 @@ export default function HomeVideos() {
       <div className="w-full lg:w-1/3">
         <video
           src={"/home-videos/home-video3.mp4"}
-          poster="/home-videos/home-thumbnail.png"
+          poster="/home-videos/home-thumbnail-1.png"
           className="w-full h-auto rounded-sm border border-amber-50"
           controls
           playsInline
@@ -13,7 +13,7 @@ export default function HomeVideos() {
       <div className="w-full lg:w-1/3">
         <video
           src={"/home-videos/home-video4.mp4"}
-          poster="/home-videos/home-thumbnail.png"
+          poster="/home-videos/home-thumbnail-2.png"
           className="w-full h-auto rounded-sm border border-amber-50"
           controls
           playsInline
